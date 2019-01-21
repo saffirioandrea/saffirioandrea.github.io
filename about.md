@@ -1,8 +1,5 @@
 [//]: #About Description
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Quisque nunc turpis, posuere a sem bibendum, finibus luctus est. 
-Mauris vestibulum enim eget urna ullamcorper, interdum condimentum nibh iaculis. 
+I am a game designer currently studying at Abertay University. My work consists in plan, design and the create of virtual worlds and game experiences with creativity, passion and ambition.
 
-Sed vel risus in erat tristique maximus. Nulla congue aliquam nibh, at viverra velit vestibulum et. 
-Quisque rhoncus euismod ligula, ac feugiat eros ultricies vel. Morbi arcu sapien, varius at risus et
+My development process involves a good amount of previsualisation material, typically storyboards and sketches, and prototype builds. Altough I have the necessary skills for working by myself, I love developing in a team where work and passion are poured into great productions.
