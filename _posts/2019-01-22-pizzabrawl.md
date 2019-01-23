@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2018-09-23 18:15:43 +0200
 categories: jekyll update
-image: "saffirioandrea.github.io/assets/images/CaravanShot.PNG"
+image: "https://img.itch.zone/aW1nLzExOTI2ODUuZ2lm/original/etN1vt.gif"
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
