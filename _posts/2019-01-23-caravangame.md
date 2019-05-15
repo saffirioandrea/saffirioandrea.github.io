@@ -1,26 +1,21 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Caravan to the end"
 date:   2018-09-23 18:15:43 +0200
 categories: jekyll update
 image: "saffirioandrea.github.io/assets/images/CaravanShot.PNG"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+In this professional university project, I worked with other 5 people (3 designers, 2 programmers) on a game prototype for a Dundee game development studio. I mainly contributed with design and 2D art. 
 
-Jekyll also offers powerful support for code snippets:
+Prototype trailer listing game features:
+/https://www.youtube.com/embed/jeR8vjmaQik/
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Gameplay footage:
+/https://www.youtube.com/embed/-tG2n18hIq8/
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Here you can read a portfolio entry for the art content and a project evaluation at the end:
+https://docs.google.com/document/d/1VDcMwlx-2R0bZPVPG8BOrLjG_7cEkLUpau_JEw6U-sc/edit?usp=sharing
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Here is the playable prototype:
+/https://drive.google.com/file/d/1eBsdcYefNBdOIFVAYRTxIDZAusQxO6no/preview/
