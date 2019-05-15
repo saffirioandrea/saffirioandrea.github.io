@@ -8,8 +8,7 @@ image: "saffirioandrea.github.io/assets/images/CaravanShot.PNG"
 
 In this professional university project, I worked with other 5 people (3 designers, 2 programmers) on a game prototype for a Dundee game development studio. I mainly contributed with design and 2D art. 
 
-Prototype trailer listing game features:
-/https://www.youtube.com/embed/jeR8vjmaQik/
+[Prototype trailer listing game features]</https://www.youtube.com/embed/jeR8vjmaQik/>
 
 Gameplay footage:
 /https://www.youtube.com/embed/-tG2n18hIq8/
