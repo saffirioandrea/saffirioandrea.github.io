@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Pizza Brawl!"
 date:   2018-09-23 18:15:43 +0200
 categories: jekyll update
 image: "https://img.itch.zone/aW1nLzExOTI2ODUuZ2lm/original/etN1vt.gif"
