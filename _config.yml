@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 keywords: >- # this means to ignore newlines until "baseurl:"
   Game, Design, Andrea, Saffirio, Development, Video, Games, Production, Interactive, Indie
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://saffiroandrea.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://saffirioandrea.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 phone: "+39 000 00 00 000"
 social:
   twitter: jekyllrb
