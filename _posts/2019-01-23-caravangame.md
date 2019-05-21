@@ -8,13 +8,15 @@ image: "saffirioandrea.github.io/assets/images/CaravanShot.PNG"
 
 In this professional university project, I worked with other 5 people (3 designers, 2 programmers) on a game prototype for a Dundee game development studio. I mainly contributed with design and 2D art. 
 
-[Prototype trailer listing game features]</https://www.youtube.com/embed/jeR8vjmaQik/>
+Prototype trailer listing game features: 
+{% include videoplayer.html video-link="https://www.youtube.com/embed/jeR8vjmaQik" %}
+<br />
 
-Gameplay footage:
-/https://www.youtube.com/embed/-tG2n18hIq8/
+Gameplay footage: 
+{% include videoplayer.html video-link="https://www.youtube.com/embed/-tG2n18hIq8" %}
 
 Here you can read a portfolio entry for the art content and a project evaluation at the end:
-https://docs.google.com/document/d/1VDcMwlx-2R0bZPVPG8BOrLjG_7cEkLUpau_JEw6U-sc/edit?usp=sharing
+[Link to the portfolio entry](https://docs.google.com/document/d/1VDcMwlx-2R0bZPVPG8BOrLjG_7cEkLUpau_JEw6U-sc/edit?usp=sharing)
 
 Here is the playable prototype:
-/https://drive.google.com/file/d/1eBsdcYefNBdOIFVAYRTxIDZAusQxO6no/preview/
+[Download playable prototype](https://drive.google.com/file/d/1eBsdcYefNBdOIFVAYRTxIDZAusQxO6no/preview/)

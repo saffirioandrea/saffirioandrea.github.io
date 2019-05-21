@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     
     
@@ -171,8 +171,19 @@
                         {% include gallery-item.html post-id=index%}
                     {% endfor %}	
                 </div>
-                <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button"
-                        data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+
+                <div>
+                    <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                        
+                    <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                
                 <ol class="carousel-indicators">
                     {% for post in site.posts %}
                         {% assign index = forloop.index | minus: 1 %}
@@ -281,38 +292,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="assets/js/script.min.js"></script>
     <script>
-        $.fn.isInViewport = function() {
-  var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight();
+        $(window).on('resize scroll', function() {
+            var isElementInView = Utils.isElementInView($('#section-description'), false);
 
-  var viewportTop = $(window).scrollTop();
-  var viewportBottom = viewportTop + $(window).height();
+            if (isElementInView) {
+                $('#carousel-1').carousel("pause");
+            } else {
+                $('#carousel-1').carousel("cycle");
+            }
 
-  return elementBottom > viewportTop && elementTop < viewportBottom;
-};
+        });
+        $(document).ready(function() {
+            var previousSlide = 0;
+            var currentSlide = 0;
+            $('#carousel-1').on('slid.bs.carousel', function() {
+                currentSlide = $(".carousel-item.active").attr("data-id");
+                currentSlide = parseInt(currentSlide);
 
-$(window).on('resize scroll', function() {
-    if($('#carousel-1').isInViewport)
-    {
-        $('#carousel-1').carousel("cycle");
-        console.log("IN");
-    }else
-    {
-        
-        $('#carousel-1').carousel("pause");
-    }
-});
-        $('#carousel-1').on('slid.bs.carousel', function () {
-            var id = $(".carousel-item.active").attr("data-id");
-            id = parseInt(id);
-            var currentSlide = id - 1 < 0 ? $(".carousel-item").length - 1: id - 1;
-            $(".article[data-id='" + currentSlide +"']").fadeOut(100, function()
-            {
-                $(".article[data-id='" + (id) +"']").fadeIn(200, function()
-                {
+                $(".article[data-id='" + previousSlide + "']").fadeOut(100, function() {
+                    $(".article[data-id='" + (currentSlide) + "']").fadeIn(200, function() {
+                        previousSlide = currentSlide;
+                    });
                 });
             });
         });
+
+        function Utils() {
+
+        }
+
+        Utils.prototype = {
+            constructor: Utils,
+            isElementInView: function(element, fullyInView) {
+                var pageTop = $(window).scrollTop();
+                var pageBottom = pageTop + $(window).height();
+                var elementTop = $(element).offset().top;
+                var elementBottom = elementTop + $(element).height();
+
+                if (fullyInView === true) {
+                    return ((pageTop < elementTop) && (pageBottom > elementBottom));
+                } else {
+                    return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+                }
+            }
+        };
+
+        var Utils = new Utils();
     </script>
 </body>
 

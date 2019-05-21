@@ -12,4 +12,4 @@ Among all the concepts we agreed on this half fighting, half cooking pixel art g
 
 I just regretted not being able to include sound effects, as mentioned above. The fact that this jam took place during the exam week did not allowed me to find a composer for this project. The final result was exactly as imagined: a funny, simple, fighting minigame.
 
-Link for downloading the game: https://cyberpan.itch.io/pizzabrawl
+Link for downloading the game: [https://cyberpan.itch.io/pizzabrawl](https://cyberpan.itch.io/pizzabrawl)
