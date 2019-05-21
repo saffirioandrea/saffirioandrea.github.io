@@ -10,4 +10,6 @@ This project was part of the coursework of the module "Spatial Constructs" which
 
 Portfolio entry for this project: https://drive.google.com/open?id=1JhC_emaToITar2NnVxOH4VNfcK7GaOax
 
-Gameplay video: https://www.youtube.com/watch?v=DcB6w8BZGmg
+Gameplay video: 
+
+{% include videoplayer.html video-link=https://www.youtube.com/watch?v=DcB6w8BZGmg %}
