@@ -1,5 +1,5 @@
 ---
-layout: post
+post
 preview-title: "A day with Jekyll!"
 preview-description: "Boring and useless description"
 title: "Welcome to Jekyll!"
