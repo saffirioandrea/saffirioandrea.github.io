@@ -10,6 +10,6 @@ This project was part of the coursework of the module "Gameplay Prototyping" whi
 
 Post-mortem video with gameplay footage: 
 
-{% include videoplayer.html video-link="https://drive.google.com/open?id=1pS36h6oLq2QAYfFydT6n_Zhdrm6MKrpc" %}
+{% include videoplayer.html video-link="https://drive.google.com/file/d/1pS36h6oLq2QAYfFydT6n_Zhdrm6MKrpc/preview" %}
 
 Playable prototype of this project: [Click Here](https://drive.google.com/open?id=1eGOsP09YkCbPv2kUqbjm-Arnx6JMtr61)
