@@ -1,0 +1,18 @@
+$( document ).ready(function() 
+{
+    
+        $('.card').on('touchstart mouseenter mouseleave', function (e) {
+            'use strict'; //satisfy code inspectors
+            var link = $('.card-img-overlay', this); //preselect the link
+            if (link.hasClass('d-flex')) {
+                link.removeClass('d-flex');
+                e.preventDefault();
+                return true;
+            } else {
+                link.addClass('d-flex');
+                e.preventDefault();
+                return false; //extra, and to make sure the function has consistent return points
+            }
+        });
+});
+

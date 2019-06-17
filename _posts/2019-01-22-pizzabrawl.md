@@ -2,7 +2,7 @@
 layout: post
 title:  "Pizza Brawl!"
 date:   2018-09-23 18:15:43 +0200
-categories: jekyll update
+categories: games
 image: "https://img.itch.zone/aW1nLzExOTI2ODUuZ2lm/original/etN1vt.gif"
 ---
 This game has been developed for the Ludum Dare 41 - 3 days in total. The team was just made up of two people, a programmer and me. 

@@ -2,8 +2,16 @@
 layout: post
 title:  "Caravan to the end"
 date:   2018-09-23 18:15:43 +0200
-categories: jekyll update
-image: "saffirioandrea.github.io/assets/images/CaravanShot.PNG"
+categories: games
+image: "/assets/images/CaravanShot.PNG"
+gallery:
+    - image: https://via.placeholder.com/600x300
+    - image: https://via.placeholder.com/500x300
+    - image: https://via.placeholder.com/200x700
+    - image: https://via.placeholder.com/400x300
+    - image: https://via.placeholder.com/600x300
+    - image: https://via.placeholder.com/600x300
+    - image: https://via.placeholder.com/600x300
 ---
 
 In this professional university project, I worked with other 5 people (3 designers, 2 programmers) on a game prototype for a Dundee game development studio. I mainly contributed with design and 2D art. 
