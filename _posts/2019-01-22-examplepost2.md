@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "EX1"
+title:  "EX2"
 date:   2018-09-23 18:15:43 +0200
 categories: games
 image: "/assets/images/ThePainterProjectShot.PNG"
