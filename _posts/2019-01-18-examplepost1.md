@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "EX1"
+title:  "Honours Project"
 date:   2020-09-28 18:15:43 +0200
 categories: games
-image: "https://img.itch.zone/aW1nLzExOTI2ODUuZ2lm/original/etN1vt.gif"
+image: "assets/images/HonoursProjectScreenshotCover.jpg"
 gallery: 
     - image: https://via.placeholder.com/600x300
     - image: https://via.placeholder.com/500x300
