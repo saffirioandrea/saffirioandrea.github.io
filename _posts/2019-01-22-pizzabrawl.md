@@ -10,7 +10,7 @@ gallery:
     - image: https://via.placeholder.com/200x700
     - image: https://via.placeholder.com/400x300
 ---
-This game has been developed for the Ludum Dare 41, duration: three days. The theme was making a game by mixing two incompatible genres. My team, a programmer and me, focused on a small, arcade game, which blended both fighting games' features with cooking games' mechanics in a funny concept. 
+This game has been developed for the Ludum Dare 41, duration: three days. The theme was "make a game by mixing two incompatible genres". My team, a programmer and me, focused on a small, arcade game, which blended both fighting games' features with cooking games' mechanics in a funny concept.
 
 [Download link](https://cyberpan.itch.io/pizzabrawl)
 
