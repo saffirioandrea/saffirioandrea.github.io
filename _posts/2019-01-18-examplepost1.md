@@ -3,7 +3,7 @@ layout: post
 title:  "The Ambition of an Artist"
 date:   2018-09-28 18:15:43 +0200
 categories: games
-image: "/assets/images/ThePainterProjectShot.PNG"
+image: "https://img.itch.zone/aW1nLzExOTI2ODUuZ2lm/original/etN1vt.gif"
 gallery: 
     - image: https://via.placeholder.com/600x300
     - image: https://via.placeholder.com/500x300
