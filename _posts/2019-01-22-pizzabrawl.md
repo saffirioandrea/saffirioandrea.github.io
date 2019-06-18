@@ -15,7 +15,6 @@ Link for downloading the game: [https://cyberpan.itch.io/pizzabrawl](https://cyb
 
 ---
 
-Features:
 - Game made by two people.
 - 3 days of development.
 - Made with Unity, Photoshop and Aespirite.
