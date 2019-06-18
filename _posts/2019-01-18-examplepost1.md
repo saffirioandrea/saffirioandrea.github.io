@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Ambition of an Artist"
-date:   2018-09-22 18:15:43 +0200
+date:   2018-09-28 18:15:43 +0200
 categories: games
 image: "/assets/images/ThePainterProjectShot.PNG"
 gallery: 
