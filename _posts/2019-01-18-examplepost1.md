@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Ambition of an Artist"
+title:  "EX2"
 date:   2018-09-28 18:15:43 +0200
 categories: games
 image: "https://img.itch.zone/aW1nLzExOTI2ODUuZ2lm/original/etN1vt.gif"
