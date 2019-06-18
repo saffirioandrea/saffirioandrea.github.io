@@ -16,8 +16,8 @@ gallery:
 
 Coursework for the Professional Project module. This game blends RPG features such as character classes and turn-based combat, with travelling mechanics similar to the ones of games such as Oregon Trail. The project includes character customization, multiple locations, city economy, relationship management and dialogue system.
 
-[Trailer]  (https://youtu.be/jeR8vjmaQik) | 
-[Gameplay footage] (https://youtu.be/-tG2n18hIq8) | 
+[Trailer](https://youtu.be/jeR8vjmaQik) | 
+[Gameplay footage](https://youtu.be/-tG2n18hIq8) | 
 [Playable prototype](https://drive.google.com/file/d/1eBsdcYefNBdOIFVAYRTxIDZAusQxO6no/preview/)
 
 ----
