@@ -3,7 +3,7 @@ layout: post
 title:  "Pizza Brawl!"
 date:   2018-09-23 18:15:43 +0200
 categories: games
-image: "https://img.itch.zone/aW1nLzExOTI2ODUuZ2lm/original/etN1vt.gif"
+image: "/assets/images/ThePainterProjectShot.PNG"
 gallery: 
     - image: https://via.placeholder.com/600x300
     - image: https://via.placeholder.com/500x300
