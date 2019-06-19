@@ -3,7 +3,7 @@ layout: post
 title:  "Planet city"
 date:   2018-09-23 18:15:43 +0200
 categories: games
-image: "assets/images/PlanetCityScreenshotCover.jpg"
+image: "assets/images/PlanetCityScreenshotCoverNEW.jpg"
 gallery: 
     - image: https://via.placeholder.com/600x300
     - image: https://via.placeholder.com/500x300
