@@ -1,9 +1,11 @@
 $( document ).ready(function() 
 {
-    
-        $('.card').on('touchstart mouseenter mouseleave', function (e) {
+    var previousElement = null;
+
+        $('.card').on('mouseenter mouseleave', function (e) {
             'use strict'; //satisfy code inspectors
             var link = $('.card-img-overlay', this); //preselect the link
+            
             if (link.hasClass('d-flex')) {
                 link.removeClass('d-flex');
                 e.preventDefault();
