@@ -48,7 +48,7 @@
 
 </head>
 
-<body data-spy="scroll" style="overflow-x:hidden;">
+<body data-spy="scroll" class="h-100" style="overflow-x:hidden;">
   <div class="container-fluid">
     <div class="row py-2">
       <!-- Header-->
@@ -81,7 +81,7 @@
 
           <!-- Gallery -->
           <section>
-            <div id="carousel-gallery-preview" class="carousel slide" data-ride="carousel">
+            <div id="carousel-gallery-preview" class="carousel slide" data-interval="false" data-ride="carousel">
               <ol class="carousel-indicators">
                 {% for image in page.gallery %}
                 {% assign index = forloop.index | minus: 1 %}
@@ -91,7 +91,7 @@
 
               <!-- IMAGES -->
               <div class="carousel-inner">
-                {% for image in page.gallery %}
+                {% for element in page.gallery %}
                 {% assign index = forloop.index | minus: 1 %}
                 {%if index == 0 %}
                 <div class="carousel-item active">
@@ -99,8 +99,15 @@
                   
                 <div class="carousel-item">
                   {%endif%}
-                  <div class="carousel-element-image" style="background-image: url({{image.image}})"></div>
-                
+
+                  {% if element.image %}
+                <div class="carousel-element-image" style="background-image: url({{element.image}})"></div>
+                  {% else%}
+                  <div class="carousel-element-video embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="{{ element.video }}" allowfullscreen></iframe>
+                    </div>
+                  {%endif%}
+
                 </div>
                 {% endfor %}
               </div>
@@ -123,8 +130,10 @@
 
   </article>
 
-  <footer>
-    <div class="container">
+  <footer >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-10 offset-md-1">
       <hr style="border-color: #ccc; border-width: 1px;"/>
      
       <div class="row py-2 py-md-3">
@@ -142,7 +151,9 @@
                 <br />
                 <span><small>Andrea Saffirio © 2019</small></span>
             </p>
-          </div>
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   </footer>

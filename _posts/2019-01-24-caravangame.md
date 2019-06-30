@@ -5,9 +5,7 @@ date:   2018-09-23 18:15:43 +0200
 categories: games
 image: "/assets/images/CaravanShot.PNG"
 gallery:
-    - image: https://via.placeholder.com/600x300
-    - image: https://via.placeholder.com/500x300
-    - image: https://via.placeholder.com/200x700
+    - video: https://www.youtube.com/embed/pW_Z67R53XA
     - image: https://via.placeholder.com/400x300
     - image: https://via.placeholder.com/600x300
     - image: https://via.placeholder.com/600x300

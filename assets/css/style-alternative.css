@@ -156,6 +156,11 @@ p {
 	background-size: cover;
 	border-radius: 5px;
 }
+#carousel-gallery-preview .carousel-element-video
+{
+	height: 400px;
+}
+
 .card
 {
 	border: none;
@@ -227,4 +232,14 @@ p {
 	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+	footer
+	{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	}
 }
