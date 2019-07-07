@@ -5,7 +5,7 @@ date:   2020-09-28 18:15:43 +0200
 categories: games
 image: "assets/images/HonoursProjectScreenshotCoverNEW.jpg"
 gallery: 
-    - image: https://via.placeholder.com/600x300
+    - video: https://drive.google.com/file/d/13EMeuoh1p6rVUnBo9MgxmdjhaJ6aHp-g/preview
     - image: https://via.placeholder.com/500x300
     - image: https://via.placeholder.com/200x700
 ---
