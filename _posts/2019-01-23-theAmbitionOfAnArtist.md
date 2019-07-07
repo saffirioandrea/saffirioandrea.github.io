@@ -5,7 +5,7 @@ date:   2018-09-22 18:15:43 +0200
 categories: games
 image: "/assets/images/ThePainterProjectShot.PNG"
 gallery: 
-    - videa: https://www.youtube.com/embed/DcB6w8BZGmg
+    - video: https://www.youtube.com/embed/DcB6w8BZGmg
     - image: https://via.placeholder.com/500x300
     - image: https://via.placeholder.com/200x700
 ---
