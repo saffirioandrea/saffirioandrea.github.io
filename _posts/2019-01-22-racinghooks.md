@@ -5,7 +5,7 @@ date:   2018-09-22 18:15:43 +0200
 categories: jekyll update
 image: "/assets/images/RacingHooksHeaderImage.png"
 gallery: 
-    - image: https://via.placeholder.com/600x300
+    - video: https://drive.google.com/file/d/1rb-b1T0LY5FtQHzNQntqFjQogB0HZP4w/preview
     - image: https://via.placeholder.com/500x300
     - image: https://via.placeholder.com/200x700
 ---
