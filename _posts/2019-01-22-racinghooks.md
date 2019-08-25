@@ -6,7 +6,7 @@ categories: jekyll update
 image: "/assets/images/RacingHooksHeaderImage.png"
 gallery: 
     - video: https://drive.google.com/file/d/1rb-b1T0LY5FtQHzNQntqFjQogB0HZP4w/preview
-    - image: https://via.placeholder.com/500x300
+    - image: "/assets/images/racingHooks_Screenshot1.jpg"
     - image: https://via.placeholder.com/200x700
 ---
 
