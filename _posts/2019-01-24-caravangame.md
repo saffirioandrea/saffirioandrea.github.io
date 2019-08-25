@@ -24,3 +24,8 @@ Coursework for the Professional Project module. This game blends RPG features su
 - Developed in Unity.
 - Software used: Asepirite and Photoshop.
 - My roles: designer and 2D artist.
+
+<object type="application/pdf"
+    data="https://nikitakotter.squarespace.com/s/Nikita_Kotter_Resume_2019.pdf"
+    width="100%">
+</object>
