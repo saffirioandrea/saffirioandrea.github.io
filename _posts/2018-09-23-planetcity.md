@@ -5,14 +5,13 @@ date:   2018-09-23 18:15:43 +0200
 categories: games
 image: "assets/images/PlanetCityScreenshotCoverNEW.jpg"
 gallery: 
-    - image: https://via.placeholder.com/600x300
-    - image: https://via.placeholder.com/500x300
-    - image: https://via.placeholder.com/200x700
-    - image: https://via.placeholder.com/400x300
+    - image: "assets/images/PlanetCity_Screenshot1.png"
+    - image: "assets/images/PlanetCity_Screenshot2.png"
+    - image: "assets/images/PlanetCity_Screenshot3.PNG"
 ---
-This game has been developed for the Ludum Dare 41, duration: three days. The theme was "make a game by mixing two incompatible genres". My team, a programmer and me, focused on a small, arcade game, which blended both fighting games' features with cooking games' mechanics in a funny concept.
+This concept has been developed for the Abertay Serious Game Jam. The theme of the jam was developing and presenting a concept regarding environmental impact of human activities. 4 student colleagues and I decided to design a management game in which quality of the environment could be raised through research into renewable energy. The game got to the second place.
 
-[Download link](https://cyberpan.itch.io/pizzabrawl)
+[Presentation link](https://cyberpan.itch.io/pizzabrawl)
 
 
 ---
