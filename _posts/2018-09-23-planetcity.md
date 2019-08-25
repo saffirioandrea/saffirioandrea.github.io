@@ -9,7 +9,7 @@ gallery:
     - image: "/assets/images/PlanetCity_Screenshot2.png"
     - image: "/assets/images/PlanetCity_Screenshot3.PNG"
 ---
-This concept has been developed for the Abertay Serious Game Jam. The theme of the jam was developing and presenting a concept regarding environmental impact of human activities. 4 student colleagues and I decided to design a management game in which quality of the environment could be raised through research into renewable energy. The game got to the second place.
+This concept has been developed for the Abertay Serious Game Jam 5. The theme of the jam was developing and presenting a concept regarding environmental impact of human activities. 4 student colleagues and I decided to design a management game in which quality of the environment could be raised through research into renewable energy. The game got to the second place.
 
 [Presentation link](https://cyberpan.itch.io/pizzabrawl)
 
