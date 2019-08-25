@@ -7,9 +7,9 @@ image: "/assets/images/CaravanShot.PNG"
 gallery:
     - video: https://www.youtube.com/embed/jeR8vjmaQik
     - video: https://www.youtube.com/embed/-tG2n18hIq8
-    - image: "assets/images/CaravanScreenshot1.jpg"
-    - image: "assets/images/CaravanScreenshot2.jpg"
-    - image: "assets/images/CaravanScreenshot3.jpg"
+    - image: "/assets/images/CaravanScreenshot1.JPG"
+    - image: "/assets/images/CaravanScreenshot2.JPG"
+    - image: "/assets/images/CaravanScreenshot3.JPG"
 ---
 
 Coursework for the Professional Project module. This game blends RPG features such as character classes and turn-based combat, with travelling mechanics similar to the ones of games such as Oregon Trail. The project includes character customization, multiple locations, city economy, relationship management and dialogue system.
