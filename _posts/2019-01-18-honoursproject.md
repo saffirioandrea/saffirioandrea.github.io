@@ -11,7 +11,7 @@ gallery:
     - image: "/assets/images/Honours3.jpg"
 ---
 
-Work-in-progress project for my Game Design and Production Degree. This project explore the concept of controlling two characters in an action game through the management of the game time. The prototype will be ready and playable in mid-August.  
+Honours project for my Game Design and Production Degree. This project explores the concept of controlling two characters simultaneously in an action game through the manipulation of the game time.   
 
 [Download link](https://drive.google.com/open?id=17BO5ZDP-_ly-NHyFCzwilobFYQ_SFqw2) | 
 [Development process](https://drive.google.com/open?id=1S0TPMUV3GOqJ-ycuRf-hgZWrctQDJ4h_)
