@@ -13,7 +13,8 @@ gallery:
 
 Work-in-progress project for my Game Design and Production Degree. This project explore the concept of controlling two characters in an action game through the management of the game time. The prototype will be ready and playable in mid-August.  
 
-[Download link](https://drive.google.com/open?id=17BO5ZDP-_ly-NHyFCzwilobFYQ_SFqw2) | [Development process](https://drive.google.com/open?id=1S0TPMUV3GOqJ-ycuRf-hgZWrctQDJ4h_)
+[Download link](https://drive.google.com/open?id=17BO5ZDP-_ly-NHyFCzwilobFYQ_SFqw2) | 
+[Development process](https://drive.google.com/open?id=1S0TPMUV3GOqJ-ycuRf-hgZWrctQDJ4h_)
 ----
 
 - Made with Unreal Engine 4, Maya and Photoshop.
