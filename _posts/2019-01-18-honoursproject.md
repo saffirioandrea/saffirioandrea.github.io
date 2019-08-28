@@ -6,8 +6,9 @@ categories: games
 image: "assets/images/HonoursProjectScreenshotCoverNEW.jpg"
 gallery: 
     - video: https://drive.google.com/file/d/1IyZuMVpQ4xwenlV27ScdTEI2zdHj2UmT/preview
-    - image: https://via.placeholder.com/500x300
-    - image: https://via.placeholder.com/200x700
+    - image: "/assets/images/Honours1.jpg"
+    - image: "/assets/images/Honours2.jpg"
+    - image: "/assets/images/Honours3.jpg"
 ---
 
 Work-in-progress project for my Game Design and Production Degree. This project explore the concept of controlling two characters in an action game through the management of the game time. The prototype will be ready and playable in mid-August.  
@@ -18,4 +19,4 @@ Work-in-progress project for my Game Design and Production Degree. This project 
 - Made with Unreal Engine 4, Maya and Photoshop.
 - Developed in 5 months.
 - Programmed using Blueprints.
-- My roles: designer, programmer, 3D artist.
+- My roles: designer, programmer, 3D artist, 2D artist.
