@@ -6,8 +6,9 @@ categories: games
 image: "/assets/images/ThePainterProjectShot.PNG"
 gallery: 
     - video: https://www.youtube.com/embed/DcB6w8BZGmg
-    - image: https://via.placeholder.com/500x300
-    - image: https://via.placeholder.com/200x700
+    - image: "/assets/images/AmbitionOfAnArtist.jpg"
+    - image: "/assets/images/AmbitionOfAnArtist2.jpg"
+    - image: "/assets/images/AmbitionOfAnArtist3.jpg"
 ---
 
 This project was part of the coursework of the module "Spatial Constructs" which required to create a 5 minutes-long video of a game prototype. My work is a narrative experience which feature puzzle solving and painting interaction. Throughout the game, the player can enter inside paintings and explore the world inside them, finding clues and collecting information.  
