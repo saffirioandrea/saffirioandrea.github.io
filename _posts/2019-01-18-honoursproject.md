@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Honours Project (WIP)"
+title:  "Honours Project"
 date:   2020-09-28 18:15:43 +0200
 categories: games
 image: "assets/images/HonoursProjectScreenshotCoverNEW.jpg"
