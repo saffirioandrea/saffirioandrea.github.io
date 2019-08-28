@@ -16,7 +16,8 @@ Coursework for the Professional Project module. This game blends RPG features su
 
 [Trailer](https://youtu.be/jeR8vjmaQik) | 
 [Gameplay footage](https://youtu.be/-tG2n18hIq8) | 
-[Playable prototype](https://drive.google.com/file/d/1eBsdcYefNBdOIFVAYRTxIDZAusQxO6no/preview/)
+[Playable prototype](https://drive.google.com/file/d/1eBsdcYefNBdOIFVAYRTxIDZAusQxO6no/preview/) | 
+[GDD](https://docs.google.com/document/d/1220eIejcmK5-tDEPScvmVhmNXat5jiPufRTYkXn4VAA/edit#heading=h.qmnpiv8i8d7q)
 
 ----
 
