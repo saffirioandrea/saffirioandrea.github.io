@@ -7,8 +7,8 @@ image: "assets/images/HonoursProjectScreenshotCoverNEW.jpg"
 gallery: 
     - video: https://drive.google.com/file/d/1IyZuMVpQ4xwenlV27ScdTEI2zdHj2UmT/preview
     - image: "/assets/images/Honours1.jpg"
-    - image: "/assets/images/Honours1.jpg"
-    - image: "/assets/images/Honours1.jpg"
+    - image: "/assets/images/Honours2.jpg"
+    - image: "/assets/images/Honours3.jpg"
 ---
 
 Honours project for my Game Design and Production Degree. This project explores the concept of controlling two characters simultaneously in an action game through the manipulation of the game time.   
