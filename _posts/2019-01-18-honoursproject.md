@@ -12,6 +12,7 @@ gallery:
 ---
 
 Honours project for my Game Design and Production Degree. This project is based on controlling two different characters in a third person shooter using time manipulation. The player starts by controlling one character, C1, whose objective is to kill all enemies in the level. If it dies, the time is reset to the first time the player got control of it but this time the player controls C2, a character whose objective is avoid the murder of its ally by anticipating and eliminating its killer. If C2 is successful, the player switches back to C1 and a checkpoint for a future rewind is set at this point. Repeatedly switching between the two characters, the player slowly "records" the entire playthrough. At the end, a replay syncronising all characters is provided.
+
 (The prototype is conceived to display a game mechanics, hence graphics are minimal and bugs may be present).
 
 [Download link](https://drive.google.com/open?id=17BO5ZDP-_ly-NHyFCzwilobFYQ_SFqw2) | 
