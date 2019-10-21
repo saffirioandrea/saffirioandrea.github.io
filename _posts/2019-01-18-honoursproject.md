@@ -15,7 +15,7 @@ Honours project for my Game Design and Production Degree. This project is based 
 
 (The prototype is conceived to display a game mechanics, hence graphics are minimal and bugs may be present).
 
-[Download link](https://drive.google.com/open?id=17BO5ZDP-_ly-NHyFCzwilobFYQ_SFqw2) | 
+[Download link](https://drive.google.com/file/d/1jh6_g-Kc1w2yPPAOp_xSnjBlDkpcQrhs/view?usp=sharing) | 
 [Development process](https://drive.google.com/open?id=1S0TPMUV3GOqJ-ycuRf-hgZWrctQDJ4h_)
 
 ----
