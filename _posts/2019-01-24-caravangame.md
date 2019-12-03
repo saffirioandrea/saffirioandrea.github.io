@@ -49,7 +49,7 @@ For the rest of the module, I spent all my efforts drawing 2D assets and working
 
 ## Player experience
 
-<img src="\assets\images\caravanScreenGeneral.png" class="img-fluid rounded" alt="Responsive image">
+<img src="\assets\images\caravanScreenGeneral.PNG" class="img-fluid rounded" alt="Responsive image">
 
 Caravan to the End is a humorous and bizarre adventure in which all of the weird-looking characters in the game contribute to deliver an easy-going yet challenging mobile experience. The player typical playthrough mainly consists of cycles of two phases: the management phase and the encounter phase.<br><br>
 
