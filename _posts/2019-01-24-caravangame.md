@@ -3,7 +3,7 @@ layout: post
 title:  "Caravan To the End"
 date:   2016-09-23 18:15:43 +0200
 categories: games
-image: "/assets/images/tn_Caravan.png"
+image: "/assets/images/tn_Caravan.PNG"
 description: "A mobile game based on managing a caravan set out for a bizarre voyage"
 gallery:
     - video: https://www.youtube.com/embed/jeR8vjmaQik
@@ -61,7 +61,7 @@ During the management phase, the Caravan is stopping in a city and the player ma
 After leaving a city, the player may decide in which room of the caravan each character is going to spend the trip, allowing the characters in the same room to interact with each other, affecting or improving their relationship based on their personality traits. This stat is fundamental during the second phase of the game. The management phase ends when the user chooses the destination of the next trip on the map.<br><br>
 </div>
 <div class="col">
-<img src="\assets\images\caravanRelationships.png" class="img-fluid rounded" alt="Responsive image">
+<img src="\assets\images\caravanRelationships.PNG" class="img-fluid rounded" alt="Responsive image">
 <h6>Characters in the same room develop their relationships</h6>
 </div>
 </div>
@@ -72,7 +72,7 @@ Often during the journey the player can meet other people, thus triggering the e
  A character that is happy about its companion will fight much better than a character whose relationship with the other members of the staff are unsatisfactory. If the party survives the encounter, the player is rewarded with money or other resources, but characters who are defeated in combat are permanently removed from the party. They can be replaced in cities, but their relationships are lost, meaning the efficacy of a character with good relationships in combat must be developed again with a new character.<br><br><br>
 </div>
 <div class="col">
-<img src="\assets\images\caravanFightScreen.png" class="img-fluid rounded" alt="Responsive image">
+<img src="\assets\images\caravanFightScreen.PNG" class="img-fluid rounded" alt="Responsive image">
 <h6>Combat interface</h6>
 </div>
 </div>
