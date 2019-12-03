@@ -52,24 +52,22 @@
 
 
   <!--/.Body-->
-  <article id="article-post">
-    <div class="row">
-      <div class="container-fluid">
+  <article id="article-post"style="overflow-x: hidden;">
+
+      <div class="container-fluid" style="overflow-x: hidden;">
         <div class="row py-2">
           <!-- Header-->
-          <div class="col-12 col-md-10 offset-md-1" data-toggle="affix">
+          <div class="col-12 col-md-10" data-toggle="affix">
             <!-- Title -->
-            <div class="text-right">
-              <h1 class="title" style="letter-spacing: 1px; ">
-                <a href="{{site.url}}" class="article-close-link" title="Home">
+            <div class="text-right my-3">
+                <a href="{{site.url}}" class="article-close-link" style="letter-spacing: 1px;" title="Home">
                   CLOSE POST
                 </a>
               </h1>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+     
 
 <!--TITLE SECTION-->
 
@@ -85,72 +83,44 @@
           </div>
       </div>
 
-
-
 <!-- CAROUSEL -->
 
-<div class="container">
-  <div class="row justify-content-md-center">
-        <a class="left-carousel-control left-right-arrows" href="#carousel-gallery-preview" data-slide="prev">
-        <i class="fas fa-chevron-left"></i>
-      </a>
-
-      <div class="col-sm-8">
-        <div id="carousel-gallery-preview" class="carousel slide" data-interval="false" data-ride="carousel">
-          <!-- <ol class="carousel-indicators">
-            {% for image in page.gallery %}
-            {% assign index = forloop.index | minus: 1 %}
-            <li data-target="#carousel-gallery-preview" data-slide-to="{{index}}" class="active"></li>
-            {% endfor %}
-          </ol> -->
-
-          <!-- IMAGES -->
-
+  <div class="row justify-content-center">
+      <div id="carousel-gallery-preview" class="carousel slide d-flex justify-content-around align-items-center" data-ride="carousel" data-interval="false">
+          <a class="carousel-control-prev align-self-stretch" href="#carousel-gallery-preview" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
           <div class="carousel-inner">
-            {% for element in page.gallery %}
-            {% assign index = forloop.index | minus: 1 %}
-            {%if index == 0 %}
-            <div class="carousel-item active">
-              {%else%}
-
-            <div class="carousel-item">
-              {%endif%}
-
-              {% if element.image %}
-            <div class="carousel-element-image" style="background-image: url({{element.image}})"></div>
-              {% else%}
-              <div class="carousel-element-video embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="{{ element.video }}" allowfullscreen></iframe>
-                </div>
-              {%endif%}
-
-            </div>
-            {% endfor %}
+              {% for element in page.gallery %}
+              {% assign index = forloop.index | minus: 1 %}
+              {%if index == 0 %}
+              <div class="carousel-item active">
+                {%else%}
+  
+              <div class="carousel-item">
+                {%endif%}
+  
+                {% if element.image %}
+              <div class="carousel-element-image" style="background-image: url({{element.image}})"></div>
+                {% else%}
+                <div class="carousel-element-video embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="{{ element.video }}" allowfullscreen></iframe>
+                  </div>
+                {%endif%}
+  
+              </div>
+              {% endfor %}
           </div>
-        </div>
+          <a class="carousel-control-next align-self-stretch" href="#carousel-gallery-preview" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
       </div>
-      <a class="right-carousel-control left-right-arrows" href="#carousel-gallery-preview" data-slide="next">
-      <i class="fas fa-chevron-right"></i>
-      </a>
-      </div>
+      
+  </div>
 
 
-    </div>
-</div>
-          <!-- INDICATORS -->
-
-        <!--<div class="row justify-content-md-center">
-
-
-          <ol class="carousel-indicators">
-            {% for image in page.gallery %}
-            {% assign index = forloop.index | minus: 1 %}
-            <li data-target="#carousel-gallery-preview" data-slide-to="{{index}}" class="active"></li>
-            {% endfor %}
-          </ol>
-
-
-      </div>-->
 
 <!-- BUTTONS -->
 
@@ -179,6 +149,7 @@
           <div class="col-xl-7">
               <div class="text-center text-secondary mt-4">{{ page.content }}</div>
           </div>
+        </div>
         </div>
 
 <!--FOOTER -->

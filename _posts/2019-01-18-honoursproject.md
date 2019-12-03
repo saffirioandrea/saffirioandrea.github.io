@@ -63,7 +63,7 @@ This project was the perfect opportunity to refine my programming skills and to 
 ## Player experience
 
 
-![Diagram](\assets\images\rewindHonours.JPG)
+![Diagram](\assets\images\rewindHonours.JPG){: .img-fluid}
 
 ###### Rewind animation, from the top-right corner counterclockwise: 1) C1 gets killed, 2) Rewind, 3) Transition to the second character, 4) C2 is active
 

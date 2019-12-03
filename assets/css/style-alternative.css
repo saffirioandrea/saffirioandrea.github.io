@@ -156,14 +156,27 @@ p {
 }
 #carousel-gallery-preview .carousel-element-image
 {
-	height: 400px;
 	background-position: center;
 	background-size: cover;
-	border-radius: 5px;
 }
-#carousel-gallery-preview .carousel-element-video
+
+#carousel-gallery-preview
 {
-	height: 400px;
+	min-width: 100%;
+}
+
+@media (min-width: 768px) {
+    #carousel-gallery-preview
+	{
+		min-width: 70%;
+	}
+}
+
+@media (min-width: 1920px) {
+    #carousel-gallery-preview
+	{
+		min-width: 90%;
+	}
 }
 
 .card
@@ -247,7 +260,7 @@ p {
 	font-weight: 300;
 	letter-spacing: 2px;
 }
- .left-right-arrows {
+/* .left-right-arrows {
 
 	color: #ccc;
 	padding-top: 12rem;
@@ -274,6 +287,16 @@ p {
 .carousel-indicators li {
   border-color:#ccc;
   background-color:#ccc;
+}*/
+
+.carousel-control-prev, .carousel-control-next {
+	position: inherit;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	filter: grayscale(100%) brightness(67%);
+-webkit-filter: grayscale(100%) brightness(67%);
+-moz-filter: grayscale(100%) brightness(67%);
 }
 
 .carousel-inner {
@@ -305,11 +328,9 @@ p {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	margin: 10px 1%;
-	min-width: 320px;
-	max-width: 480px;
-	max-height: 360px;
-	width: 48%;
+	/*margin: 10px 1%;*/
+
+	width: 100%;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
@@ -399,10 +420,32 @@ figure.effect-lily figcaption > div {
 	position: absolute;
 	bottom: 2vh;
 	left: 0;
-	padding: 2em;
+	padding: .8em;
+	/*padding: 2em;*/
 	width: 100%;
 	height: 50%;
 }
+
+
+@media (min-width: 768px) {
+    figure.effect-lily figcaption > div {
+	
+		padding: 1.5em;
+		
+	}
+	
+}
+
+@media (min-width: 1200px) {
+	figure.effect-lily figcaption > div {
+	
+		padding: 2em;
+		
+	}
+	
+}
+
+
 
 figure.effect-lily h2 {
 	-webkit-transition: -webkit-transform 0.35s;

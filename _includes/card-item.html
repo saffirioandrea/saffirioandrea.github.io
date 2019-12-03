@@ -1,8 +1,9 @@
+  <div class="col-12 col-lg-6 p-lg-1 p-md-2 p-2 mx-0">
   <figure class="effect-lily rounded">
     {% if post.preview-image %}
-    <img src="{{ post.preview-image }}" alt="{{ post.title }}"/>
+    <img class="img-fluid" src="{{ post.preview-image }}" alt="{{ post.title }}"/>
     {% else %}
-    <img src="{{ post.image }}" alt="{{ post.title }}" />
+    <img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}" />
     {% endif %}
     <figcaption>
       <div>
@@ -24,3 +25,4 @@
       <a href="{{ post.url }}">View more</a>
     </figcaption>
   </figure>
+  </div>
