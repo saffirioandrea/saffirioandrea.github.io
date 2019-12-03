@@ -3,7 +3,7 @@ layout: post
 title:  "The Ambition of an Artist"
 date:   2017-09-22 18:15:43 +0200
 categories: games
-image: "/assets/images/tn_Artist.png"
+image: "/assets/images/tn_Artist.PNG"
 description: "A previsualisation project about the search of a legendary artist who could paint worlds"
 gallery:
     - video: https://www.youtube.com/embed/DcB6w8BZGmg
@@ -32,7 +32,7 @@ The Ambition of an Artist was part of the coursework of the module “Spatial Co
 <br>
 <div class="row">
 <div class="col">
-<img src="\assets\images\AmbitionSmallScreen.png" class="img-fluid rounded" alt="Responsive image">
+<img src="\assets\images\AmbitionSmallScreen.PNG" class="img-fluid rounded" alt="Responsive image">
 <h6>Rooms of the mansion in the game</h6>
 </div>
 <div class="col">
@@ -60,7 +60,7 @@ Overall, The Ambition of an Artist is an intriguing game experience based on dis
 This tool can be accessed by pressing TAB and also allows the player to open the “Notes”, that is to say the deduction page. In this section, the Sentences collected by the user are displayed. Sentences may be added by interacting with objects, accessing into new areas or solving puzzles and are the main element leading the player in the game. By linking Sentences to each other, the character may unlock more questions or answers, which in turn grant a deeper understanding of the environment and the correct approach to puzzles. Moreover, correct deductions might also open new ways of interacting with the world or new character skills, encouraging the player to return to already explored parts of the map and find new, or previously inaccessible paths.
 </div>
 <div class="col">
-<img src="\assets\images\noteScreen.png" class="img-fluid rounded" alt="Responsive image">
+<img src="\assets\images\noteScreen.PNG" class="img-fluid rounded" alt="Responsive image">
 <h6>Linking two sentences using the Notepad</h6>
 
 </div>
