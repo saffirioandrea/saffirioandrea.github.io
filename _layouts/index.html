@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="{{ site.url }}/assets/css/style-alternative.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
   <!-- OMG HI SEO, LOVE YOU SO MUCH -->
 
@@ -42,8 +45,8 @@
   <!-- Facebook Details -->
   <meta property="fb:app_id" content="0">
 
-  <!-- Pls Stop Invading my code, seo-senpai 
-              . . . 
+  <!-- Pls Stop Invading my code, seo-senpai
+              . . .
       -->
 
 </head>
@@ -63,13 +66,13 @@
 
           <!-- About me -->
           <div class="my-3 my-md-5">
-            <p class="about-me text-md-right">
-              Creativity, passion and ambition.           
+            <p class="about-me text-md-right text-secondary">
+              Creativity, passion and ambition.
 
-              I am a game designer currently studying at Abertay University. My work consists in planning, designing and creating video games.
+              I am a Game Designer, graduated at the Abertay University (Dundee, UK) . My work consists in planning, designing and creating video game protoypes. <br><br>
 
-              My development process involves the creation of previsualisation material, typically storyboards and sketches, and prototype builds. 
-              Altough I have the required skills for working by myself, I love developing in a team in which work and passion are casted into engaging game experiences.
+              My development process involves the creation of previsualisation material, design documentation, and prototype builds. I also enjoy programming in C# and using Unreal Blueprints. <br><br>
+              I have the required skills for working by myself, although I love developing in a team in which work and passion are casted into engaging game experiences.
             </p>
           </div>
 
@@ -89,15 +92,16 @@
       <!-- Grid -->
       <div class="col-12 col-md-9 d-md-flex align-items-md-center">
         <section class="my-0 my-md-3">
-  
-              <div class="card-columns">
+
+              <div class="grid">
+
                 {% for post in site.posts %}
                 {% assign index = forloop.index | minus: 1 %}
                 {% include card-item.html post-id=index %}
                 {% endfor %}
 
               </div>
-          
+
         </section>
       </div>
     </div>
@@ -106,12 +110,12 @@
   <!--Navbar
     <nav class="navbar justify-content-center navbar-expand navbar-light">
     -->
-  <!-- Collapse button 
+  <!-- Collapse button
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
             aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>-->
-  <!-- Collapsible content 
+  <!-- Collapsible content
         <div class="collapse navbar-collapse " id="basicExampleNav">-->
   <!-- <div class="text-center">-->
   <!-- Links -->

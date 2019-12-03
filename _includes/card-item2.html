@@ -1,0 +1,39 @@
+<!-- Card -->
+<div class="card">
+
+    {% if post.preview-image %}
+    <img class="card-img-top image-gallery" src="{{ post.preview-image }}" alt="{{ post.title }}"/>
+    {% else %}
+    <img class="card-img image-gallery" src="{{ post.image }}" alt="{{ post.title }}" />
+    {% endif %}
+
+    <div class="card-img-overlay d-none align-items-center">
+        <h5 class="card-overlay-title">
+            <a class="card-title-link" href="{{ post.url }}" title="{{ post.title }}">
+                {% if post.preview-title %}
+                    {{ post.preview-title }}
+                {% else %}
+                    {{ post.title }}
+                {% endif %}
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title about-me text-md-center">
+        {% if post.preview-title %}
+            {{ post.preview-title }}
+        {% else %}
+            {{ post.title }}
+        {% endif %}
+      </h5>
+
+      <p class="card-text about-me text-md-center">
+        {% if post.preview-description %}
+            {{ post.preview-description }}
+        {% else %}
+            {{ post.description }}
+        {% endif %}
+      </p>
+    </div>
+</div>
+<!-- -->

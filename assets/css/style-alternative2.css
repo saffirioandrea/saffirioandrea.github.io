@@ -44,7 +44,6 @@ h6 {
 	font-size: .8em;
 	color: #bbb !important;
 	margin-bottom: 2rem;
-	margin-top: 1rem;
 }
 
 .display-1 {
@@ -404,10 +403,15 @@ figure.effect-lily figcaption > div {
 	height: 50%;
 }
 
+figure.effect-lily h2,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,50vh,0);
+	transform: translate3d(0,50vh,0);
+}
+
 figure.effect-lily h2 {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	opacity: 0;
 }
 
 figure.effect-lily p {
@@ -419,13 +423,9 @@ figure.effect-lily p {
 
 figure.effect-lily:hover img{
 	opacity: 1;
-	filter: brightness(30%);
+	filter: brightness(70%);
 }
 figure.effect-lily:hover p {
-	opacity: 1;
-}
-
-figure.effect-lily:hover h2 {
 	opacity: 1;
 }
 

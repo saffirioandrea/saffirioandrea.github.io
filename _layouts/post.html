@@ -42,125 +42,176 @@
   <!-- Facebook Details -->
   <meta property="fb:app_id" content="0">
 
-  <!-- Pls Stop Invading my code, seo-senpai 
-              . . . 
+  <!-- Pls Stop Invading my code, seo-senpai
+              . . .
       -->
 
 </head>
 
 <body data-spy="scroll" class="h-100" style="overflow-x:hidden;">
-  <div class="container-fluid">
-    <div class="row py-2">
-      <!-- Header-->
-      <div class="col-12 col-md-10 offset-md-1" data-toggle="affix">
-        <!-- Title -->
-        <div class="text-right">
-          <h1 class="title" style="letter-spacing: 1px; ">
-            <a href="{{site.url}}" class="article-close-link" title="Home">
-              CLOSE POST
-            </a>
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <!--/.Body-->
   <article id="article-post">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-md-5 offset-md-1">
-          <!-- Body of artcle -->
-          <section>
-            <h1 class="text-md-right">{{ page.title }}</h1>
-            <div class="text-md-right">{{ page.content }}</div>
-          </section>
-        </div>
-        <div class="col-12 col-md-5 ">
-
-          <!-- Gallery -->
-          <section>
-            <div id="carousel-gallery-preview" class="carousel slide" data-interval="false" data-ride="carousel">
-              <ol class="carousel-indicators">
-                {% for image in page.gallery %}
-                {% assign index = forloop.index | minus: 1 %}
-                <li data-target="#carousel-gallery-preview" data-slide-to="{{index}}" class="active"></li>
-                {% endfor %}
-              </ol>
-
-              <!-- IMAGES -->
-              <div class="carousel-inner">
-                {% for element in page.gallery %}
-                {% assign index = forloop.index | minus: 1 %}
-                {%if index == 0 %}
-                <div class="carousel-item active">
-                  {%else%}
-                  
-                <div class="carousel-item">
-                  {%endif%}
-
-                  {% if element.image %}
-                <div class="carousel-element-image" style="background-image: url({{element.image}})"></div>
-                  {% else%}
-                  <div class="carousel-element-video embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="{{ element.video }}" allowfullscreen></iframe>
-                    </div>
-                  {%endif%}
-
-                </div>
-                {% endfor %}
-              </div>
-              <!-- -->
-
-              <!-- INDICATORS -->
-              <a class="carousel-control-prev" href="#carousel-gallery-preview" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carousel-gallery-preview" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-              <!-- -->
+    <div class="row">
+      <div class="container-fluid">
+        <div class="row py-2">
+          <!-- Header-->
+          <div class="col-12 col-md-10 offset-md-1" data-toggle="affix">
+            <!-- Title -->
+            <div class="text-right">
+              <h1 class="title" style="letter-spacing: 1px; ">
+                <a href="{{site.url}}" class="article-close-link" title="Home">
+                  CLOSE POST
+                </a>
+              </h1>
             </div>
-          </section>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-8 offset-md-4">
           </div>
-        </div> 
+        </div>
+      </div>
+    </div>
+
+<!--TITLE SECTION-->
+
+      <div class="row">
+          <div class="col-sm">
+            <h1 class="text-center title" style="text-transform: uppercase; letter-spacing: 1px">{{ page.title }}</h1>
+          </div>
       </div>
 
+      <div class="row">
+          <div class="col-sm">
+            <h3 class="text-center title" style="color:#aaa">{{ page.description }}</h3>
+          </div>
+      </div>
+
+
+
+<!-- CAROUSEL -->
+
+<div class="container">
+  <div class="row justify-content-md-center">
+        <a class="left-carousel-control left-right-arrows" href="#carousel-gallery-preview" data-slide="prev">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+
+      <div class="col-sm-8">
+        <div id="carousel-gallery-preview" class="carousel slide" data-interval="false" data-ride="carousel">
+          <!-- <ol class="carousel-indicators">
+            {% for image in page.gallery %}
+            {% assign index = forloop.index | minus: 1 %}
+            <li data-target="#carousel-gallery-preview" data-slide-to="{{index}}" class="active"></li>
+            {% endfor %}
+          </ol> -->
+
+          <!-- IMAGES -->
+
+          <div class="carousel-inner">
+            {% for element in page.gallery %}
+            {% assign index = forloop.index | minus: 1 %}
+            {%if index == 0 %}
+            <div class="carousel-item active">
+              {%else%}
+
+            <div class="carousel-item">
+              {%endif%}
+
+              {% if element.image %}
+            <div class="carousel-element-image" style="background-image: url({{element.image}})"></div>
+              {% else%}
+              <div class="carousel-element-video embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="{{ element.video }}" allowfullscreen></iframe>
+                </div>
+              {%endif%}
+
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <a class="right-carousel-control left-right-arrows" href="#carousel-gallery-preview" data-slide="next">
+      <i class="fas fa-chevron-right"></i>
+      </a>
+      </div>
+
+
+    </div>
+</div>
+          <!-- INDICATORS -->
+
+        <!--<div class="row justify-content-md-center">
+
+
+          <ol class="carousel-indicators">
+            {% for image in page.gallery %}
+            {% assign index = forloop.index | minus: 1 %}
+            <li data-target="#carousel-gallery-preview" data-slide-to="{{index}}" class="active"></li>
+            {% endfor %}
+          </ol>
+
+
+      </div>-->
+
+<!-- BUTTONS -->
+
+      <div class="row justify-content-center">
+        <div class="col-xl-5">
+            <div class="text-center">
+            {%if page.trailer != null %}
+            <a class="btn btn-outline-secondary text-wrap lul" href="{{ page.trailer }}" role="button"><i class="fas fa-video"></i>   Trailer </a>
+            {% endif %}
+            {%if page.gameplay != null %}
+            <a class="btn btn-outline-secondary text-wrap lul" href="{{ page.gameplay }}" role="button"> <i class="fas fa-gamepad"></i>  Gameplay trailer </a>
+            {% endif %}
+            {%if page.download != null %}
+            <a class="btn btn-outline-secondary text-wrap lul" href="{{ page.download }}" role="button"> <i class="fas fa-arrow-down"></i>  Download prototype </a>
+            {% endif %}
+            {%if page.gdd != null %}
+            <a class="btn btn-outline-secondary text-wrap lul" href="{{ page.gdd }}" role="button"> <i class="fas fa-file-alt"></i>  Documentation </a>
+            {% endif %}
+            </div>
+        </div>
+      </div>
+
+<!-- CONTENT-->
+
+        <div class="row justify-content-md-center">
+          <div class="col-xl-7">
+              <div class="text-center text-secondary mt-4">{{ page.content }}</div>
+          </div>
+        </div>
+
+<!--FOOTER -->
+
+      <div class="row">
+        <footer>
+            <div class="container-fluid">
+              <div class="col-12 col-md-10 offset-md-1">
+                <hr style="border-color: #ccc; border-width: 1px;"/>
+
+                <div class="row py-2 py-md-3">
+                    <div class="col-12 col-md-6 text-center text-md-left mb-3 mb-md-0">
+                        <h3 style="color:#aaa;">Andrea Saffirio</h3>
+                        <h6 style="color:#aaa; font-weight: 300">Game Designer</h6>
+                    </div>
+
+                  <div class="col-12 col-md-6 ">
+                      <p class="about-me-links text-center text-md-right">
+                          <a href="{{site.social.linkedin}}" target="_blank" title="Linkedin"><i class="fab fa-2x fa-linkedin"></i></a>
+                          <a href="{{site.social.twitter}}" target="_blank" title="Twitter"><i class="fab fa-2x fa-twitter-square"></i></a>
+                          <a href="mailto:{{ site.email }}" target="_blank" title="Email to {{ site.email }}"><i class="fas fa-2x fa-envelope-square"></i></i></a>
+
+                          <br />
+                          <span><small>Andrea Saffirio © 2019</small></span>
+                      </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </footer>
+      </div>
   </article>
 
-  <footer >
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-md-10 offset-md-1">
-      <hr style="border-color: #ccc; border-width: 1px;"/>
-     
-      <div class="row py-2 py-md-3">
-          <div class="col-12 col-md-6 text-center text-md-left mb-3 mb-md-0">
-              <h3 style="color:#aaa;">Andrea Saffirio</h3>
-              <h6 style="color:#aaa; font-weight: 300">Game Designer</h6>
-          </div>
-          
-        <div class="col-12 col-md-6 ">
-            <p class="about-me-links text-center text-md-right">
-                <a href="{{site.social.linkedin}}" target="_blank" title="Linkedin"><i class="fab fa-2x fa-linkedin"></i></a>
-                <a href="{{site.social.twitter}}" target="_blank" title="Twitter"><i class="fab fa-2x fa-twitter-square"></i></a>
-                <a href="mailto:{{ site.email }}" target="_blank" title="Email to {{ site.email }}"><i class="fas fa-2x fa-envelope-square"></i></i></a>
-
-                <br />
-                <span><small>Andrea Saffirio © 2019</small></span>
-            </p>
-        </div>
-      </div>
-    </div>
-      </div>
-    </div>
-  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
