@@ -66,5 +66,3 @@ This tool can be accessed by pressing TAB and also allows the player to open the
 </div>
 </div>
 
-
-----
