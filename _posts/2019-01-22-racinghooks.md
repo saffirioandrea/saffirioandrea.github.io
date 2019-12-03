@@ -63,5 +63,3 @@ However, the most difficult part was the AI. I simplified the computer-controlle
 
 <br>
 The rest of the development was spent on testing and refining every part of the enemy character stats for raising the challenge of the level without making it frustrating. For this purpose, I made the majority of the variables public and editable and I tested the project until the deadline of the module.
-
----
