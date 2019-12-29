@@ -30,7 +30,6 @@ The concept of Extrema Ratio was developed as my Honours Project. The purpose of
 ##  Gameplay Overview
 
 Extrema Ratio is based on controlling two different characters in a third person shooter using time manipulation. The player can control a protagonist using WASD for the character movement and the mouse for the camera. Other controls are shooting (LMB), reloading (R), aiming (RMB), switching weapon (scroll up) and crouching (C). For switching between characters, the player must rely on the structure of the gameplay. A typical playthrough can be explained by the following diagram.<br>
-A typical playthrough can be explained by the following diagram.
 
 <div class="row" style="margin-top: 2rem; margin-bottom: 2rem;">
 <div class="col">
