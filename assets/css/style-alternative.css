@@ -157,7 +157,7 @@ p {
 #carousel-gallery-preview .carousel-element-image
 {
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 }
 
 #carousel-gallery-preview
