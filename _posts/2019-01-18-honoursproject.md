@@ -7,7 +7,7 @@ image: "/assets/images/tn_Extrema.jpg"
 description: "Honours project about a different method of controlling multiple character in a TPS shooter"
 gallery:
     - video: https://drive.google.com/file/d/1Z-xfjjRj5lx9Upp6Ly28q4vhiN4e0RZR/preview
-    - image: "assets/images/Honours1.jpg"
+    - image: "/assets/images/Honours1.jpg"
     - image: "/assets/images/Honours2.jpg"
     - image: "/assets/images/Honours3.jpg"
 trailer:
