@@ -102,7 +102,7 @@
                 {%endif%}
   
                 {% if element.image %}
-              <div class="carousel-element-image" style="background-image: url("{{element.image}}")"></div>
+              <div class="carousel-element-image" style="background-image: url({{element.image}})"></div>
                 {% else%}
                 <div class="carousel-element-video embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="{{ element.video }}" allowfullscreen></iframe>
