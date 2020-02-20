@@ -98,13 +98,13 @@
               <div class="carousel-item active">
                 {%else%}
   
-              <div class="carousel-item">
+              <div class="carousel-item" style="height: 50vh">
                 {%endif%}
   
                 {% if element.image %}
-              <div class="carousel-element-image" style="height: 50vh; background-image: url({{element.image}}); background-repeat: no-repeat"></div>
+              <div class="carousel-element-image" style="height:100%; width:auto; background-image: url({{element.image}}); background-repeat: no-repeat"></div>
                 {% else%}
-                <div class="carousel-element-video embed-responsive embed-responsive-16by9">
+                <div class="carousel-element-video embed-responsive embed-responsive-16by9" style="height:100%; width:auto;">
                     <iframe class="embed-responsive-item" src="{{ element.video }}" allowfullscreen></iframe>
                   </div>
                 {%endif%}
