@@ -104,7 +104,7 @@
                 {% if element.image %}
               <div class="carousel-element-image" style="height:100%; width:auto; background-image: url({{element.image}}); background-repeat: no-repeat"></div>
                 {% else%}
-                <div class="carousel-element-video embed-responsive embed-responsive-16by9" style="height:100%; width:auto;">
+                <div class="carousel-element-video embed-responsive embed-responsive-16by9" style="height:100%; width:auto; background-position: center; background-size: contain;">
                     <iframe class="embed-responsive-item" src="{{ element.video }}" allowfullscreen></iframe>
                   </div>
                 {%endif%}
