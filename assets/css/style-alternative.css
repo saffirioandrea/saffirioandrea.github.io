@@ -319,6 +319,11 @@ p {
 	}
 }
 
+@media (min-width: 992px) {
+	.col-lg-6 {
+	max-width: 45% !important;
+	}
+}
 /*---------------*/
 /***** CARD EFFECT *****/
 /*---------------*/
@@ -328,7 +333,8 @@ p {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	/*margin: 10px 1%;*/
+
+	margin: 0 0 0.1rem !important;
 
 	width: 100%;
 	background: #3085a3;
@@ -429,20 +435,20 @@ figure.effect-lily figcaption > div {
 
 @media (min-width: 768px) {
     figure.effect-lily figcaption > div {
-	
+
 		padding: 1.5em;
-		
+
 	}
-	
+
 }
 
 @media (min-width: 1200px) {
 	figure.effect-lily figcaption > div {
-	
+
 		padding: 2em;
-		
+
 	}
-	
+
 }
 
 
