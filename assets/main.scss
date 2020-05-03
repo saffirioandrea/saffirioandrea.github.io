@@ -142,3 +142,18 @@ header {
   height: 75%;
   top: 12.5%;
 }
+
+#home-grid .work-preview {
+  padding: 5px 5px;
+}
+
+/////////
+.text-grey-color {
+  color: $grey-color !important;
+}
+.text-grey-light-color {
+  color: $grey-color-light !important;
+}
+.text-grey-dark-color {
+  color: $grey-color-dark !important;
+}

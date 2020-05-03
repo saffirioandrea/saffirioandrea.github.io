@@ -7,7 +7,7 @@ layout: default
   <h4 class="decoration-line">My Works</h4>
   {%- endif -%}
 
-  <div class="row grid">
+  <div class="row grid" id="home-grid">
     {% for post in site.posts %} {% assign index = forloop.index | minus: 1 %}
     {% include card-item.html post-id=index %} {% endfor %} {% include
     custom-card-item.html image="/assets/images/JamCover.jpg" title="Jams"
