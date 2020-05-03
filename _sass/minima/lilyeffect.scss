@@ -99,7 +99,7 @@ figure.effect-lily figcaption {
 
 figure.effect-lily figcaption > div {
   position: absolute;
-  bottom: 5vh;
+  bottom: 4vh;
   left: 0;
   padding: 0.8em;
   /*padding: 2em;*/
@@ -160,10 +160,14 @@ figure.effect-lily:hover p {
 }
 
 @media (min-width: $on-laptop) {
-  .grid figure h2 {
+  figure.effect-lily figcaption > div {
+    bottom: 8vh;
+  }
+  .grid figure.effect-lily h2 {
     font-size: 1em !important;
   }
-  .grid figure p {
-    font-size: 0.8em !important;
+  .grid figure.effect-lily p {
+    font-size: 2vh !important;
+    font-size: clamp(10px, 2vh, 25px) !important;
   }
 }
