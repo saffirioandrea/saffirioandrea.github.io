@@ -161,3 +161,8 @@ header {
 .text-grey-dark-color {
   color: $grey-color-dark !important;
 }
+
+/// fix rounded on safari
+.rounded {
+  -webkit-transform: translateZ(0);
+}
