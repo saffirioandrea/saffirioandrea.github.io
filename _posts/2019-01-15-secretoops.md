@@ -8,8 +8,8 @@ description: "An innovative AR mobile multiplayer game published on iOS devices"
 gallery:
     - video: https://www.youtube.com/embed/mk6gGXhRzD8
     - video: https://www.youtube.com/embed/8t4MhVS2Wjw
-    - image: "/assets/images/SpyScreen1.JPG"
-    - image: "/assets/images/SpyScreen2.JPG"
+    - image: "/assets/images/SpyScreen1.jpg"
+    - image: "/assets/images/SpyScreen2.jpg"
 ---
 
 Secret Oops! is an innovative cooperative local multiplayer Augmented Reality game where players must collaborate to make the protagonist reach the end of the level without being discovered. Each player can intervene on the world action by tapping and disabling traps through the smartphone. Traps might intersecate with each other or require multiple players to be switched off, so all partecipants must collaborate to win.
