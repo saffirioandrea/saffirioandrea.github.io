@@ -1,201 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+useAltBackground: true
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{site.title}}</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://kit.fontawesome.com/542f877eb4.js"></script>
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/style-alternative.css">
-  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
-
-
-  <!-- OMG HI SEO, LOVE YOU SO MUCH -->
-
-  <link rel="canonical" href="{{ site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="SITE TITLE HERE" href="{{ site.url }}/feed.xml">
-
-  <!-- Site URL -->
-  <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:site_name" content="{{ site.url }}">
-
-  <!-- Site Image -->
-  <meta property="og:image" content="{{ site.seo_image }}">
-  <meta name="twitter:image" content="{{ site.seo_image }}">
-
-  <!-- Site Icon -->
-  <link rel="icon" href="{{ site.favicon }}">
-
-  <!-- Site Description -->
-  <meta name="description" content="{{ site.description }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="twitter:description" content="{{ site.description }}">
-
-  <!-- Keywords-->
-  <meta name="keywords" content="{{ site.keywords }}">
-
-  <!-- Twitter Details -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@{{ site.social.twitter }}">
-
-  <!-- Facebook Details -->
-  <meta property="fb:app_id" content="0">
-
-  <!-- Pls Stop Invading my code, seo-senpai
-              . . .
-      -->
-
-</head>
-
-<body data-spy="scroll" class="h-100" style="overflow-x:hidden;">
-
-
-  <!--/.Body-->
-  <article id="article-post"style="overflow-x: hidden;">
-
-      <div class="container-fluid" style="overflow-x: hidden;">
-        <div class="row py-2">
-          <!-- Header-->
-          <div class="col-12 col-md-10" data-toggle="affix">
-            <!-- Title -->
-            <div class="text-right my-3">
-                <a href="{{site.url}}" class="article-close-link" style="letter-spacing: 1px;" title="Home">
-                  CLOSE POST
-                </a>
-              </h1>
-            </div>
-          </div>
-        </div>
-
-
-<!--TITLE SECTION-->
-
-      <div class="row">
-          <div class="col-sm">
-            <h1 class="text-center title" style="text-transform: uppercase; letter-spacing: 1px">{{ page.title }}</h1>
-          </div>
-      </div>
-
-      <div class="row">
-          <div class="col-sm">
-            <h3 class="text-center title" style="color:#aaa">{{ page.description }}</h3>
-          </div>
-      </div>
-
-<!-- CAROUSEL -->
-{%if page.isALink == null %}
-  <div class="row justify-content-center">
-      <div id="carousel-gallery-preview" class="carousel slide d-flex justify-content-around align-items-center" data-ride="carousel" data-interval="false">
-          <a class="carousel-control-prev align-self-stretch" href="#carousel-gallery-preview" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-          </a>
-          <div class="carousel-inner">
-              {% for element in page.gallery %}
-              {% assign index = forloop.index | minus: 1 %}
-              {%if index == 0 %}
-              <div class="carousel-item active" style="height: 50vh">
-                {%else%}
-
-              <div class="carousel-item" style="height: 50vh">
-                {%endif%}
-
-                {% if element.image %}
-              <div class="carousel-element-image" style="height:100%; width:auto; background-image: url({{element.image}}); background-repeat: no-repeat"></div>
-                {% else%}
-                <div class="carousel-element-video embed-responsive embed-responsive-16by9" style="height:100%; width:auto; background-position: center; background-size: contain;">
-                    <iframe class="embed-responsive-item" src="{{ element.video }}" allowfullscreen></iframe>
-                  </div>
-                {%endif%}
-
-              </div>
-              {% endfor %}
-          </div>
-          <a class="carousel-control-next align-self-stretch" href="#carousel-gallery-preview" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-          </a>
-      </div>
-
+<article
+  class="post h-entry"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
+  <div class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">
+      {{ page.title | escape }}
+    </h1>
+    {%- if page.description -%}
+    <p class="post-sub-title">{{page.description | escape }}</p>
+    {%- endif -%}
+    <p class="post-meta">
+      <a
+        href="{{site.url}}"
+        alt="Back to home"
+        title="Go To Home"
+        style="text-decoration: none;"
+      >
+        All projects
+      </a>
+      / {{ page.title | escape }}
+      <time
+        class="dt-published d-none"
+        datetime="{{ page.date | date_to_xmlschema }}"
+        itemprop="datePublished"
+      >
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+        -%} {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%} •
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"
+        ><span class="p-author h-card" itemprop="name"
+          >{{ page.author }}</span
+        ></span
+      >
+      {%- endif -%}
+    </p>
   </div>
 
-{% endif %}
+  {% include post-data-carousel.html name="preview-post-carousel"
+  data=page.gallery %} {% include post-data-buttons.html %}
 
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
 
-<!-- BUTTONS -->
+  {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%} {%-
+  endif -%}
 
-      <div class="row justify-content-center">
-        <div class="col-xl-5">
-            <div class="text-center">
-            {%if page.trailer != null %}
-            <a class="btn btn-outline-secondary text-wrap lul" href="{{ page.trailer }}" role="button"><i class="fas fa-video"></i>   Trailer </a>
-            {% endif %}
-            {%if page.gameplay != null %}
-            <a class="btn btn-outline-secondary text-wrap lul" href="{{ page.gameplay }}" role="button"> <i class="fas fa-gamepad"></i>  Gameplay trailer </a>
-            {% endif %}
-            {%if page.download != null %}
-            <a class="btn btn-outline-secondary text-wrap lul" href="{{ page.download }}" role="button"> <i class="fas fa-arrow-down"></i>  Download prototype </a>
-            {% endif %}
-            {%if page.gdd != null %}
-            <a class="btn btn-outline-secondary text-wrap lul" href="{{ page.gdd }}" role="button"> <i class="fas fa-file-alt"></i>  Documentation </a>
-            {% endif %}
-            </div>
-        </div>
-      </div>
-
-<!-- CONTENT-->
-
-        <div class="row justify-content-md-center">
-          <div class="col-xl-7">
-              <div class="text-center text-secondary mt-4">{{ page.content }}</div>
-          </div>
-        </div>
-        </div>
-
-<!--FOOTER -->
-
-      <div class="row">
-        <footer>
-            <div class="container-fluid">
-              <div class="col-12 col-md-10 offset-md-1">
-                <hr style="border-color: #ccc; border-width: 1px;"/>
-
-                <div class="row py-2 py-md-3">
-                    <div class="col-12 col-md-6 text-center text-md-left mb-3 mb-md-0">
-                        <h3 style="color:#aaa;">Andrea Saffirio</h3>
-                        <h6 style="color:#aaa; font-weight: 300">Game Designer</h6>
-                    </div>
-
-                  <div class="col-12 col-md-6 ">
-                      <p class="about-me-links text-center text-md-right">
-                          <a href="{{site.social.linkedin}}" target="_blank" title="Linkedin"><i class="fab fa-2x fa-linkedin"></i></a>
-                          <a href="{{site.social.twitter}}" target="_blank" title="Twitter"><i class="fab fa-2x fa-twitter-square"></i></a>
-                          <a href="mailto:{{ site.email }}" target="_blank" title="Email to {{ site.email }}"><i class="fas fa-2x fa-envelope-square"></i></i></a>
-
-                          <br />
-                          <span><small>Andrea Saffirio © 2019</small></span>
-                      </p>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-  </article>
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="{{site.url}}/assets/js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

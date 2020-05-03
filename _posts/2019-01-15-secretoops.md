@@ -3,7 +3,7 @@ layout: post
 title:  "Secret Oops!"
 date:   2019-12-23 18:15:43 +0200
 categories: games
-image: "/assets/images/SecretOops!Cover.jpg"
+image: "/assets/images/SecretOops!Cover.JPG"
 description: "An innovative AR mobile multiplayer game published on iOS devices"
 gallery:
     - video: https://www.youtube.com/embed/mk6gGXhRzD8

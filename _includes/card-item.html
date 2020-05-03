@@ -1,28 +1,31 @@
-  <div class="col-12 col-lg-6 p-lg-1 p-md-2 p-2 mx-0 h-100" itemprop="mainEntity" itemscope itemtype="http://schema.org/Game">
+<div
+  class="col-12 col-xl-6"
+  itemprop="mainEntity"
+  itemscope
+  itemtype="http://schema.org/Game"
+>
   <figure class="effect-lily rounded">
     {% if post.preview-image %}
-    <img class="img-fluid" src="{{ post.preview-image }}" alt="{{ post.title }}"/>
+    <img
+      class="img-fluid"
+      src="{{ post.preview-image }}"
+      alt="{{ post.title }}"
+    />
     {% else %}
     <img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}" />
     {% endif %}
     <figcaption>
       <div>
         <h2>
-          {% if post.preview-title %}
-          {{ post.preview-title }}
-          {% else %}
-          {{ post.title }}
-          {% endif %}
+          {% if post.preview-title %} {{ post.preview-title }} {% else %} {{
+          post.title }} {% endif %}
         </h2>
         <p>
-          {% if post.preview-description %}
-              {{ post.preview-description }}
-          {% else %}
-              {{ post.description }}
-          {% endif %}
+          {% if post.preview-description %} {{ post.preview-description }} {%
+          else %} {{ post.description }} {% endif %}
         </p>
       </div>
       <a href="{{ post.url }}" title="{{post.title}}">View more</a>
     </figcaption>
   </figure>
-  </div>
+</div>

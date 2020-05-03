@@ -1,0 +1,144 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+html,
+body {
+  min-height: 100vh !important;
+}
+header,
+footer,
+.page-content {
+  padding: 20px 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: $background-color;
+  width: 100%;
+}
+
+header {
+  background-color: $background-color;
+}
+
+.post-buttons {
+  margin: 30px 0;
+}
+.post-buttons__button {
+  margin-bottom: 5px;
+}
+@media (min-width: $on-laptop) {
+  header,
+  .page-content {
+    padding: 20px 30px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+    padding: 0 0;
+    width: 38%;
+  }
+  #main-content {
+    min-height: 100%;
+  }
+
+  header {
+    position: fixed;
+    left: 0;
+    width: 42%;
+    height: 100%;
+    z-index: 1000;
+    overflow: hidden;
+  }
+
+  header:hover {
+    overflow-y: auto;
+  }
+
+  header .about-section {
+    height: 70%;
+  }
+  header .about-section p {
+    font-size: clamp(16px, 1.5vw, 18px);
+  }
+}
+
+@media (min-width: $on-xl-laptop) {
+  header {
+    width: 33.33333%;
+  }
+  footer {
+    width: 30.33333%;
+  }
+  header .about-section p {
+    font-size: clamp(16px, 1.1vw, 18px);
+  }
+}
+
+.alt-background {
+  background-color: $alt-ackground-color;
+}
+
+.decoration-line {
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+  line-height: $base-line-height * 2;
+  color: $text-color;
+}
+.decoration-line:after {
+  content: "";
+  top: 50%;
+  width: 100%;
+  margin-left: 10px;
+  height: 1px;
+  position: absolute;
+  background: #ccc;
+}
+
+.sub-title {
+  font-size: 1.5em;
+  color: $subtitle-text-color;
+  text-transform: uppercase;
+}
+
+.post-sub-title {
+  font-size: 1.5em;
+  color: $post-subtitle-text-color;
+}
+
+.social-media-list {
+  margin: 10px 0 10px 0;
+}
+.social-media-list .social-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 35px;
+  min-width: 25px;
+  height: auto;
+  max-height: 35px;
+  min-height: 25px;
+  overflow-y: hidden;
+  margin-right: 5px;
+}
+.social-media-list .social-link .svg-icon {
+  width: 100%;
+  height: auto;
+}
+
+.hover-effect {
+  opacity: 0.8;
+  transition: opacity 0.3s ease 0s;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  vertical-align: middle;
+  height: 75%;
+  top: 12.5%;
+}

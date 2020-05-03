@@ -1,0 +1,38 @@
+<header>
+  <div class="row">
+    <div class="col-12">
+      <a
+        class="home-link"
+        href="{{site.url}}"
+        title="Home"
+        style="text-decoration: none;"
+      >
+        <h1>Saffirio Andrea</h1>
+        <p class="sub-title">Game Designer</p>
+      </a>
+    </div>
+    <div class="col-12">
+      {% include social.html %}
+    </div>
+
+    <div class="col-12 about-section">
+      {% include about.html %}
+
+      <p class="d-lg-none">
+        <a
+          class="text-center"
+          data-toggle="collapse"
+          href="#long-about"
+          role="button"
+          aria-expanded="false"
+          aria-controls="long-about"
+          >Expand About</a
+        >
+      </p>
+    </div>
+
+    <div class="col-12 d-lg-block d-none">
+      {%- include footer.html -%}
+    </div>
+  </div>
+</header>

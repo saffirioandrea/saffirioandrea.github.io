@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "The Ambition of an Artist"
-date:   2017-09-22 18:15:43 +0200
+title: "The Ambition of an Artist"
+date: 2017-09-22 18:15:43 +0200
 categories: games
 image: "/assets/images/tn_Artist.PNG"
 description: "A previsualisation project about the search of a legendary artist who could paint worlds"
 gallery:
-    - video: https://www.youtube.com/embed/DcB6w8BZGmg
-    - image: "/assets/images/AmbitionOfAnArtist.jpg"
-    - image: "/assets/images/AmbitionOfAnArtist2.jpg"
-    - image: "/assets/images/AmbitionOfAnArtist3.jpg"
+  - video: https://www.youtube.com/embed/DcB6w8BZGmg
+  - image: "/assets/images/AmbitionOfAnArtist.jpg"
+  - image: "/assets/images/AmbitionOfAnArtist2.jpg"
+  - image: "/assets/images/AmbitionOfAnArtist3.jpg"
 trailer:
 gameplay: "https://www.youtube.com/embed/DcB6w8BZGmg"
 download:
@@ -25,17 +25,16 @@ The Ambition of an Artist was part of the coursework of the module “Spatial Co
 - Programmed using Unreal Blueprints.
 - My roles: designer, programmer, 3D artist.
 
-
 (The prototype was developed for the creation of a mock playthrough, hence it is not meant to be playable, as it does not take into account a generic user playing it).
 
-##  Gameplay Overview
-<br>
+## Gameplay Overview
+
 <div class="row">
-<div class="col">
+<div class="col-12 col-xl-6">
 <img src="\assets\images\AmbitionSmallScreen.PNG" class="img-fluid rounded" alt="Responsive image">
 <h6>Rooms of the mansion in the game</h6>
 </div>
-<div class="col">
+<div class="col-12 col-xl-6">
 The project is a puzzle game with a focus on environmental exploration. Set at the end of the 19th century, the player impersonates the son of a famous painter, known as Ulysses, who went missing two years earlier. The main character has found his father’s family home, which was kept secret by the artist, and starts searching for clues about the fate of his missing parent. He soon finds out that Ulysses obtained a supernatural skill through an occult ritual: his paintings are worlds that can be entered and explored.
 </div>
 </div>
@@ -55,14 +54,14 @@ The project is a puzzle game with a focus on environmental exploration. Set at t
 ## Player experience
 
 Overall, The Ambition of an Artist is an intriguing game experience based on discovering the fate of a mysterious person by reading information, analysing clues and finding new way of accessing the secrets of his mansion. The gameplay experience was intended to be relaxing but nevertheless interesting. At the beginning of the game, the player enters an old Jacobean House, abandoned long ago. The most powerful tool the protagonist has at disposal is the Notepad, whose main purpose is to display the protagonist's’ thoughts and reasoning, while also helping the player by giving suggestions and clear tasks. <br><br>
+
 <div class="row">
-<div class="col">
+<div class="col-12 col-xl-6">
 This tool can be accessed by pressing TAB and also allows the player to open the “Notes”, that is to say the deduction page. In this section, the Sentences collected by the user are displayed. Sentences may be added by interacting with objects, accessing into new areas or solving puzzles and are the main element leading the player in the game. By linking Sentences to each other, the character may unlock more questions or answers, which in turn grant a deeper understanding of the environment and the correct approach to puzzles. Moreover, correct deductions might also open new ways of interacting with the world or new character skills, encouraging the player to return to already explored parts of the map and find new, or previously inaccessible paths.
 </div>
-<div class="col">
+<div class="col-12 text-center col-xl-6">
 <img src="\assets\images\noteScreen.PNG" class="img-fluid rounded" alt="Responsive image">
 <h6>Linking two sentences using the Notepad</h6>
 
 </div>
 </div>
-
