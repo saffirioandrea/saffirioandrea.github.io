@@ -48,8 +48,9 @@ The project is a puzzle game with a focus on environmental exploration. Set at t
 - Design a satisfactory User Experience by developing a diegetic User Interface with narrative relevance.
 - Manage and execute a game project.
 
-<br>The project was intended to be a realistic previsualisation piece for presenting the prototype, which, as mentioned, was not intended to be playable to begin with. Instead, the module aimed to achieve appeal through style, perspective, architecture, space, objects, materials, lighting and composition.
-<br><br>I have chosen Unreal Engine as the game engine for this project as I wished to improve my Unreal Blueprints scripting skills and intended to demonstrate my UX design knowledge by developing a diegetic User Interface with narrative relevance. Although the use of third-party assets was allowed in this module, I seized the opportunity to test my 3D and 2D art creation skills and made most of the environment myself. The 3D assets of walls and floors are modular and, as the majority of the assets in the level, they are built entirely using Maya 2019 and textured using Photoshop CC 2019.
+The project was intended to be a realistic previsualisation piece for presenting the prototype, which, as mentioned, was not intended to be playable to begin with. Instead, the module aimed to achieve appeal through style, perspective, architecture, space, objects, materials, lighting and composition.
+
+I have chosen Unreal Engine as the game engine for this project as I wished to improve my Unreal Blueprints scripting skills and intended to demonstrate my UX design knowledge by developing a diegetic User Interface with narrative relevance. Although the use of third-party assets was allowed in this module, I seized the opportunity to test my 3D and 2D art creation skills and made most of the environment myself. The 3D assets of walls and floors are modular and, as the majority of the assets in the level, they are built entirely using Maya 2019 and textured using Photoshop CC 2019.
 
 ## Player experience
 

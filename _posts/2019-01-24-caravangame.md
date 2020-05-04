@@ -43,8 +43,8 @@ The game was created for a Dundonian game company. The conditions the client set
 
 ## Development
 
-For this project. the majority of the team members were game designers. Therefore, after the preproduction stage, all designers worked on a secondary role to fill the lack of artists in the group. Although I mainly worked as a Technical Designer - building small prototypes and other pre-production material- I also created the majority of 2D assets and worked closely with programmers to help with the implementation.<br><br>
-During the design stage, which lasted around three weeks, the game designers focused on building a solid concept behind the game. For this purpose, I made a paper prototype to help fixating every aspect of the gameplay.<br>
+For this project. the majority of the team members were game designers. Therefore, after the preproduction stage, all designers worked on a secondary role to fill the lack of artists in the group. Although I mainly worked as a designer - creating pre-production material- I also created the majority of 2D assets and worked closely with programmers to help with the implementation.
+During the design stage, which lasted around three weeks, the game designers focused on building a solid concept behind the game. For this purpose, I made a paper prototype to help fixating every aspect of the gameplay.
 For the rest of the module, I spent all my efforts drawing 2D assets and working alongside programmers. My work with 2D art can be found at this [link](https://docs.google.com/document/d/1VDcMwlx-2R0bZPVPG8BOrLjG_7cEkLUpau_JEw6U-sc/edit?usp=sharing). I also wrote a short visual guide to help other designers create smaller pieces of art. This guide can be found at this [link](https://docs.google.com/document/d/1e3SKPG2BHH4xRPQ9R4mNEU3egTuTHNPhKF8pj1WJNtU/edit?usp=sharing)
 
 ## Player experience

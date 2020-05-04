@@ -26,33 +26,15 @@ Racing Hooks was part of the coursework for the module “Gameplay Prototyping�
 
 The project is a technical demo and for this reason graphic assets are limited to the minimum amount possible.
 
-## Gameplay Overview
-
-The game involves the use of a simple AI. The concept behind this game is a racing game in which contestants run by swinging by the means of a grappling hook. The player and the NPCs start at the beginning of a straight road, on which many spheres - called “Nodes” - float over. The Nodes allow the contestants to attach their hooks and to proceed towards the finish line. At the start, the player is the character holding the Artefact, an object that raises the score over time for whoever holds it. While keeping it, the user must run towards the finish line jumping from a node to the other. If the protagonist falls on the ground, the score is lowered of one point per second until he/she attaches to a node again. Occasionally, an enemy could move close to the player for stealing the Artefact, but this can be prevented by pressing E quick enough. If lost, the Artefact can be stolen back by pressing E when near the new holder. The first runner that gets to the finish line ends the game, but the winner is the character with the highest score, that is to say whoever managed to keep the Artefact for the longest.
-
 ## Objectives
 
 The purpose of Running Hook is to build a functional prototype of an original game mechanic using Unity 2019. I created the concept, made previsualisation pieces and coded the entire game in engine.
 
-## Development
+## Gameplay Overview
 
-Since I appreciate a top-down workflow, I started by listing the features of the game and broke them down in smaller, more manageable tasks. For reference, I made a previsualisation piece including all the player controls and mechanics.
+The game involves the use of a simple AI. The concept behind this game is a racing game in which contestants run by swinging by the means of a grappling hook. The player and the NPCs start at the beginning of a straight road, on which many spheres - called “Nodes” - float over. The Nodes allow the contestants to attach their hooks and to proceed towards the finish line. At the start, the player is the character holding the Artefact, an object that raises the score over time for whoever holds it. While keeping it, the user must run towards the finish line jumping from a node to the other. If the protagonist falls on the ground, the score is lowered of one point per second until he/she attaches to a node again. Occasionally, an enemy could move close to the player for stealing the Artefact, but this can be prevented by pressing E quick enough. If lost, the Artefact can be stolen back by pressing E when near the new holder. The first runner that gets to the finish line ends the game, but the winner is the character with the highest score, that is to say whoever managed to keep the Artefact for the longest.
 
 <div class="text-center">
-<img src="\assets\images\GrapplingHookMechanics.jpg" class="img-fluid" alt="Responsive image" style="max-height: 512px; ">
-</div>
-
-<br>
-
-<div class="row">
-<div class="col-12 col-md-6">
-However, the most difficult part was the AI. I simplified the computer-controlled enemies using a sphere, called node_checker, to register every node in range of the NPC. From those at its disposal, the AI would choose the node that would grant it to get the nearest to the player, in order to steal the Arefact, or to the finish line, if the character is already holding the Artefact.
-</div>
-<div class="col-12 col-md-6 my-3 my-md-0">
 <img src="\assets\images\AIRunningHooks.gif" class="img-fluid" alt="Responsive image" style="max-height: 512px; margin-bottom:10px ">
 <h6>IA pathfinding in execution</h6>
 </div>
-</div>
-
-<br><br>
-The rest of the development was spent on testing and refining every part of the enemy character stats for raising the challenge of the level without making it frustrating. For this purpose, I made the majority of the variables public and editable and I tested the project until the deadline of the module.
