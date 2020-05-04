@@ -4,6 +4,7 @@ title: "Caravan To the End"
 date: 2016-09-23 18:15:43 +0200
 categories: games
 image: "/assets/images/tn_Caravan.PNG"
+
 description: "A mobile game based on managing a caravan set out for a bizarre voyage"
 gallery:
   - video: https://www.youtube.com/embed/jeR8vjmaQik
@@ -20,7 +21,7 @@ gdd: "https://docs.google.com/document/d/1220eIejcmK5-tDEPScvmVhmNXat5jiPufRTYkX
 This project was part of a Professional Project in which student groups worked for a local game development company for building prototypes and testing game concepts.
 
 ## Specifics of the project
-
+<!-- https://via.placeholder.com/600x600-->
 - I worked with 5 other people (3 designers, 2 programmers).
 - Developed with Unity 2019 in 3 months.
 - The target platforms are mobile devices.

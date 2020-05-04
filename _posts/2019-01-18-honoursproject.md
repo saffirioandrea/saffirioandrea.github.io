@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Extrema Ratio"
-date: 2019-09-28 18:15:43 +0200
+date: 2017-09-22 18:15:43 +0200
 categories: games
-image: "/assets/images/tn_Extrema.jpg"
+image: /assets/images/tn_Extrema.jpg
+
 description: "Honours project about a different method of controlling multiple character in a TPS shooter"
 gallery:
-  - video: https://drive.google.com/file/d/1Z-xfjjRj5lx9Upp6Ly28q4vhiN4e0RZR/preview
+  - video: https://www.youtube.com/embed/I7q9b8eb9zA
   - image: "/assets/images/Honours1.jpg"
   - image: "/assets/images/Honours2.jpg"
   - image: "/assets/images/Honours3.jpg"
@@ -19,7 +20,7 @@ gdd: "https://drive.google.com/open?id=1S0TPMUV3GOqJ-ycuRf-hgZWrctQDJ4h_"
 The concept of Extrema Ratio was developed as my Honours Project. The purpose of the project was to create an alternative method for controlling multiple protagonist characters. The development lasted four months circa and followed closely the research for my Dissertation, which proposed an original character controlling method compared to the most commonly used in video games.
 
 ## Specifics of the project
-
+<!-- https://via.placeholder.com/600x600 -->
 - Made with Unreal Engine 4, Maya 2019 and Photoshop CC 2019.
 - Developed in 4 months.
 - Programmed using Unreal Blueprints.

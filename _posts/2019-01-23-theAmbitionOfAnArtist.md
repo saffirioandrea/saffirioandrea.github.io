@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "The Ambition of an Artist"
-date: 2017-09-22 18:15:43 +0200
+date: 2019-09-28 18:15:43 +0200
 categories: games
-image: "/assets/images/tn_Artist.PNG"
+image: /assets/images/tn_Artist.PNG
+
 description: "A previsualisation project about the search of a legendary artist who could paint worlds"
 gallery:
   - video: https://www.youtube.com/embed/DcB6w8BZGmg
@@ -15,7 +16,7 @@ gameplay: "https://www.youtube.com/embed/DcB6w8BZGmg"
 download:
 gdd: "https://drive.google.com/file/d/1JhC_emaToITar2NnVxOH4VNfcK7GaOax/view"
 ---
-
+<!--https://via.placeholder.com/600x600-->
 The Ambition of an Artist was part of the coursework of the module “Spatial Constructs”, which required to create a five-minute-long video of a game prototype. My work consisted of a narrative experience featuring puzzle solving and environmental interaction. Throughout the game, the player can access to worlds inside paintings and, by exploring them, finding clues and collecting information.
 
 ## Specifics of the project

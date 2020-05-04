@@ -3,10 +3,11 @@ layout: post
 title: "Racing Hooks"
 date: 2018-09-22 18:15:43 +0200
 categories: games
-image: "/assets/images/tn_Racing.png"
+image: /assets/images/tn_Racing.png
+
 description: "The prototype for an original running game with simple AI in Unity"
 gallery:
-  - video: https://drive.google.com/file/d/1rb-b1T0LY5FtQHzNQntqFjQogB0HZP4w/preview
+  - video: https://www.youtube.com/embed/sy009fyRLTc
   - image: "/assets/images/racingHooks_Screenshot1.jpg"
   - image: "/assets/images/runningHooks1.jpg"
 trailer:
@@ -18,7 +19,7 @@ gdd:
 Racing Hooks was part of the coursework for the module “Gameplay Prototyping”, consisting in creating a five-minute-long post-mortem video of a playable game prototype made in Unity 2019. The concept behind the game was required to be based on a twist of a common game mechanic, so I decided to focus my work on the racing game genre.
 
 ## Specifics of the project
-
+<!-- https://via.placeholder.com/600x400 -->
 - Developed with Unity 2019.
 - Coded in C#.
 - One month of development.
