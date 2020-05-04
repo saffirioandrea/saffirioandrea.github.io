@@ -3,8 +3,7 @@ layout: post
 title: "Racing Hooks"
 date: 2018-09-22 18:15:43 +0200
 categories: games
-image: /assets/images/tn_Racing.png
-
+image: "/assets/images/tn_Racing.png"
 description: "The prototype for an original running game with simple AI in Unity"
 gallery:
   - video: https://www.youtube.com/embed/sy009fyRLTc
