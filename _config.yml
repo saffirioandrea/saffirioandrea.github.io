@@ -32,6 +32,7 @@ url: "https://saffirioandrea.github.io" # the base hostname & protocol for your 
 twitter_username: andremcsaff
 linkedin_username: andrea-saffirio-19928212b
 embedded_email: saffirio.andrea@outlook.com
+cv_url_download: https://google.com
 
 permalink: /:categories/:title:output_ext
 seo_image: "/assets/images/ThePainterProjectShot.PNG"

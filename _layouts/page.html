@@ -1,14 +1,17 @@
 ---
 layout: default
+useAltBackground: true
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+<div class="post-header">
+  <h1 class="post-title p-name">
+    {{ page.title | escape }}
+  </h1>
+  {%- if page.description -%}
+  <p class="post-sub-title">{{page.description | escape }}</p>
+  {%- endif -%}
+</div>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+<div class="post-content e-content">
+  {{ content }}
+</div>

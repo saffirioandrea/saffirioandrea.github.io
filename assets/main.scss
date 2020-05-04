@@ -7,6 +7,7 @@
 html,
 body {
   min-height: 100vh !important;
+  scroll-behavior: smooth;
 }
 header,
 footer,
@@ -35,7 +36,7 @@ header {
   margin-bottom: 5px;
 }
 
-#home-grid .work-preview {
+#projects .work-preview {
   width: 100% !important;
   padding: 5px 5px;
 }
@@ -44,6 +45,10 @@ header {
   header,
   .page-content {
     padding: 20px 30px;
+  }
+  .page-content {
+    min-height: 100vh;
+    height: auto;
   }
   footer {
     position: fixed;
@@ -75,6 +80,10 @@ header {
   header .about-section p {
     font-size: clamp(14px, 1.5vh, 18px);
   }
+
+  .social-contacts {
+    padding: 20px 30px;
+  }
 }
 
 @media (min-width: $on-xl-laptop) {
@@ -88,7 +97,8 @@ header {
     height: 65vh;
   }
   header .about-section p {
-    font-size: clamp(15px, 2vh, 18px);
+    //font-size: clamp(15px, 2vh, 18px);
+    font-size: 18px;
   }
   .card-columns {
     font-size: 0;
@@ -99,11 +109,11 @@ header {
   }
 }
 
-@media (min-width: $on-xl-laptop) and (min-height: 1080px) {
+/*@media (min-width: $on-xl-laptop) and (min-height: 1080px) {
   header .about-section p {
     font-size: clamp(15px, 2vh, 20px);
   }
-}
+}*/
 .alt-background {
   background-color: $alt-ackground-color;
 }
@@ -196,4 +206,19 @@ a.social-link:hover {
 .card {
   margin: 0 !important;
   border: none;
+}
+
+.navbar-nav .active {
+  color: $text-color;
+  font-weight: 800;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.social-contacts {
+  position: fixed;
+  bottom: 50px !important;
 }
