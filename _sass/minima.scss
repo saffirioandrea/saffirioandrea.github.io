@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,600");
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
 // Define defaults for each variable.
 
@@ -40,3 +40,11 @@ $on-xl-laptop: 1200px !default;
 
 // Import partials.
 @import "minima/base", "minima/syntax-highlighting", "minima/lilyeffect";
+
+.card-columns {
+  column-count: 1;
+
+  @media (min-width: $on-xl-laptop) {
+    column-count: 2;
+  }
+}

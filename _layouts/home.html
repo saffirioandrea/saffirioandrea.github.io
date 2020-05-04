@@ -8,10 +8,12 @@ layout: default
   {%- endif -%}
 
   <div class="row grid" id="home-grid">
-    {% for post in site.posts %} {% assign index = forloop.index | minus: 1 %}
-    {% include card-item.html post-id=index %} {% endfor %} {% include
-    custom-card-item.html image="/assets/images/JamCover.jpg" title="Jams"
-    description="A small collections of games I contributed to."
-    url="https://cyberpan.itch.io/" open_new_tab="true" %}
+    <div class="card-columns">
+      {% for post in site.posts %} {% assign index = forloop.index | minus: 1 %}
+      {%- include card-item.html post-id=index -%} {% endfor %} {% include
+      custom-card-item.html image="/assets/images/JamCover.jpg" title="Jams"
+      description="A small collections of games I contributed to."
+      url="https://cyberpan.itch.io/" open_new_tab="true" %}
+    </div>
   </div>
 </div>
