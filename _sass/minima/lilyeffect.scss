@@ -83,6 +83,7 @@
 /*---------------*/
 
 figure.effect-lily img {
+  z-index: 0;
   max-width: none;
   width: -webkit-calc(100% + 50px);
   width: calc(100% + 50px);

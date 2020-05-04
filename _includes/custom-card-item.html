@@ -5,32 +5,32 @@
   itemtype="http://schema.org/Game"
 >
   <figure class="effect-lily rounded">
-    {% if include.image %}
-    <img
-      class="img-fluid"
-      src="{{ include.image }}"
-      alt="{{ include.title }}"
-    />
-    {% endif %}
-    <figcaption>
-      <div>
-        <h2>
-          {{ include.title }}
-        </h2>
-        <p>
-          {{ include.description }}
-        </p>
-      </div>
-      <a
-        href="{{ include.url }}"
-        title="{{include.title}}"
-        {%if
-        include.open_new_tab
-        %}
-        target="_blank"
-        {%endif%}
-        >View more</a
-      >
-    </figcaption>
+    <a
+      href="{{ include.url }}"
+      title="{{include.title}}"
+      {%if
+      include.open_new_tab
+      %}
+      target="_blank"
+      {%endif%}
+    >
+      {% if include.image %}
+      <img
+        class="img-fluid"
+        src="{{ include.image }}"
+        alt="{{ include.title }}"
+      />
+      {% endif %}
+      <figcaption>
+        <div>
+          <h2>
+            {{ include.title }}
+          </h2>
+          <p>
+            {{ include.description }}
+          </p>
+        </div>
+      </figcaption>
+    </a>
   </figure>
 </div>

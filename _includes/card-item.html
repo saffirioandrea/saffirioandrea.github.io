@@ -5,27 +5,28 @@
   itemtype="http://schema.org/Game"
 >
   <figure class="effect-lily rounded">
-    {% if post.preview-image %}
-    <img
-      class="img-fluid"
-      src="{{ post.preview-image }}"
-      alt="{{ post.title }}"
-    />
-    {% else %}
-    <img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}" />
-    {% endif %}
-    <figcaption>
-      <div>
-        <h2>
-          {% if post.preview-title %} {{ post.preview-title }} {% else %} {{
-          post.title }} {% endif %}
-        </h2>
-        <p>
-          {% if post.preview-description %} {{ post.preview-description }} {%
-          else %} {{ post.description }} {% endif %}
-        </p>
-      </div>
-      <a href="{{ post.url }}" title="{{post.title}}">View more</a>
-    </figcaption>
+    <a href="{{ post.url }}" title="{{post.title}}">
+      {% if post.preview-image %}
+      <img
+        class="img-fluid"
+        src="{{ post.preview-image }}"
+        alt="{{ post.title }}"
+      />
+      {% else %}
+      <img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}" />
+      {% endif %}
+      <figcaption>
+        <div>
+          <h2>
+            {% if post.preview-title %} {{ post.preview-title }} {% else %} {{
+            post.title }} {% endif %}
+          </h2>
+          <p>
+            {% if post.preview-description %} {{ post.preview-description }} {%
+            else %} {{ post.description }} {% endif %}
+          </p>
+        </div>
+      </figcaption></a
+    >
   </figure>
 </div>
