@@ -73,10 +73,6 @@ header {
   header:hover {
     overflow-y: auto;
   }
-
-  header .about-section {
-    height: 72vh;
-  }
   header .about-section p {
     font-size: clamp(14px, 1.5vh, 18px);
   }
@@ -93,12 +89,10 @@ header {
   footer {
     width: 30.33333%;
   }
-  header .about-section {
-    height: 65vh;
-  }
+
   header .about-section p {
-    //font-size: clamp(15px, 2vh, 18px);
     font-size: 18px;
+    font-size: clamp(14px, 2vh, 18px);
   }
   .card-columns {
     font-size: 0;
