@@ -21,7 +21,7 @@
 title: Andrea Saffirio Video Game Designer - Projects Portfolio
 email: saffirio.andrea@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Creativity, passion and ambition. I am a Game Designer, graduated at Abertay University. 
+  Creativity, passion and ambition. I am a Game Designer, graduated at Abertay University.
   My work consists in planning, designing and creating video games.
 keywords: >- # this means to ignore newlines until "baseurl:"
   Game, Design, Andrea, Saffirio, Development, Video, Games, Production, Interactive, Indie
@@ -32,7 +32,7 @@ url: "https://saffirioandrea.github.io" # the base hostname & protocol for your 
 twitter_username: andremcsaff
 linkedin_username: andrea-saffirio-19928212b
 embedded_email: saffirio.andrea@outlook.com
-cv_url_download: https://google.com
+cv_url_download: "https://drive.google.com/open?id=1MFHDwbIJAci7n05Wg-x5ZhsxAtiX28W7"
 
 permalink: /:categories/:title:output_ext
 seo_image: "/assets/images/ThePainterProjectShot.PNG"
