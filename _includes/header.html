@@ -18,9 +18,9 @@
       <nav class="navbar">
         <div class="navbar-nav">
           <a
-            class="nav-item nav-link {% if page.url == site.url %} active {%endif%}"
-            href="{{ site.url }}/#projects"
-            >My Projects {% if page.url == site.url %}<span class="sr-only"
+            class="nav-item nav-link"
+            href="{{ site.url }}{%- if page.layout == 'home' -%}/#projects{%-endif-%}"
+            >My Project {% if page.url == site.url %}<span class="sr-only"
               >(current)</span
             >{%endif%}</a
           >
@@ -35,7 +35,7 @@
           <a
             class="nav-item nav-link"
             target="_blank"
-            href="https://drive.google.com/open?id=1MFHDwbIJAci7n05Wg-x5ZhsxAtiX28W7"
+            href="{{site.cv_url_download}}"
             >Download My CV</a
           >
         </div>
