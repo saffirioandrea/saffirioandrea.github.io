@@ -1,19 +1,18 @@
 title: Andrea Saffirio – Game Designer
-logo:  # you can add own logo.
+logo: # you can add own logo.
 description: Game Designer specialised in prototype creation. My dream job is contributing to interactive experiences with passion, creativity and a set of skills I have developed during my studies and side projects.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://saffirioandrea.com" # the base hostname & protocol for your site, e.g. http://example.com
 seo_image: "/assets/images/Ambition_Screenshot1.jpg"
 favicon: "/assets/images/FavIconFolder"
 
 # Author Settings
 author:
   name: Andrea Saffirio
-  image: '/assets/images/ProfilePic.PNG'
+  image: "/assets/images/ProfilePic.png"
   job: Game Designer
   bio: Game Designer specialised in prototype creation. My dream job is contributing to interactive experiences with passion, creativity and a set of skills I have developed during my studies and side projects.
   email: contact@saffirioandrea.com.com
-
 
 # Contact links
 contact:
@@ -22,10 +21,8 @@ contact:
   - name: LinkedIn
     link: https://www.linkedin.com/in/andrea-saffirio-19928212b/
 
-
 # Google Analytics
 google-analytics: # add your identifier. For example UA-99631805-1.
-
 
 # Build settings
 markdown: kramdown
@@ -37,7 +34,7 @@ plugins:
 # Pages Path
 defaults:
   - scope:
-      path: '_pages'
+      path: "_pages"
     values:
       permalink: /:basename:output_ext
 
@@ -45,14 +42,13 @@ include:
   - _pages
 
 # Tags
-tag_page_dir:         tag
-tag_page_layout:      tag-page
-tag_permalink_style:  pretty
+tag_page_dir: tag
+tag_page_layout: tag-page
+tag_permalink_style: pretty
 
 sass:
   sass_dir: _sass
   style: compressed
-
 
 # Exclude from processing.
 exclude:
