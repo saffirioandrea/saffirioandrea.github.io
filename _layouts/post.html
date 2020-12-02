@@ -1,57 +1,25 @@
 ---
 layout: default
-useAltBackground: true
 ---
+<div class="container">
+  <div class="container__post">
+    <!-- begin post -->
+    <a href="{{site.baseurl}}/" class="nav__link" style="color: lightgrey;" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="1400">Back to Homepage</a>
+    <article class="post">
+      <div class="post__head" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
+        <h1 class="post__title">{{ page.title | escape }}</h1>
 
-<article
-  class="post h-entry"
-  itemscope
-  itemtype="http://schema.org/BlogPosting"
->
-  <div class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">
-      {{ page.title | escape }}
-    </h1>
-    {%- if page.description -%}
-    <p class="post-sub-title">{{page.description | escape }}</p>
-    {%- endif -%}
-    <p class="post-meta">
-      <a
-        href="{{site.url}}"
-        alt="Back to home"
-        title="Go To Home"
-        style="text-decoration: none;"
-      >
-        All projects
-      </a>
-      / {{ page.title | escape }}
-      <time
-        class="dt-published d-none"
-        datetime="{{ page.date | date_to_xmlschema }}"
-        itemprop="datePublished"
-      >
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-        -%} {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%} •
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person"
-        ><span class="p-author h-card" itemprop="name"
-          >{{ page.author }}</span
-        ></span
-      >
-      {%- endif -%}
-    </p>
+        {% if page.image %}
+        <div class="post-image img-blur" style="margin-top:3vh; background-image: url({{site.baseurl}}{{page.image}})"></div>
+        {% endif %}
+      </div>
+
+      <div class="post__content" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="100" data-aos-duration="700">
+        {{ content }}
+      </div>
+
+    </article>
+    {% include footer.html %}
+    <!-- end post -->
   </div>
-
-  {% include post-data-carousel.html name="preview-post-carousel"
-  data=page.gallery %} {% include post-data-buttons.html %}
-
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-  {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%} {%-
-  endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+</div>

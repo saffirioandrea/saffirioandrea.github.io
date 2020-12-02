@@ -3,7 +3,7 @@ layout: post
 title: "Caravan To the End"
 date: 2016-09-23 18:15:43 +0200
 categories: games
-image: "/assets/images/tn_Caravan.PNG"
+image: "/assets/images/caravanScreenGeneral.PNG"
 
 description: "A mobile game based on managing a caravan set out for a bizarre voyage"
 gallery:
@@ -18,15 +18,34 @@ download: "https://drive.google.com/file/d/1eBsdcYefNBdOIFVAYRTxIDZAusQxO6no/pre
 gdd: "https://docs.google.com/document/d/1220eIejcmK5-tDEPScvmVhmNXat5jiPufRTYkXn4VAA/edit#heading=h.qmnpiv8i8d7q"
 ---
 
-This project was part of a Professional Project in which student groups worked for a local game development company for building prototypes and testing game concepts.
+Caravan To The End was was developed for a local game company, which commissioned the development of a prototype for testing idea and evaluating game concepts.
+
+---
 
 ## Specifics of the project
 <!-- https://via.placeholder.com/600x600-->
-- I worked with 5 other people (3 designers, 2 programmers).
-- Developed with Unity 2019 in 3 months.
-- The target platforms are mobile devices.
-- Software used: Asepirite and Photoshop CC 2019.
-- My roles: designer and 2D artist.
+
+* Team of 5.
+
+* Developed with Unity 2019 in 3 months.
+
+* The target platforms are mobile devices.
+
+* Software used: Asepirite and Photoshop CC 2019.
+
+* My roles: Game Designer and 2D Artist.
+
+---
+## Project Objectives
+
+The objective of the game was delivering a complete MVP to a professional client. For this purpose, a team of five students worked on a concept based on client's requirements: the game was meant to be playable on mobile devices and was based on a Caravan management game similar to Oregon Trail.
+
+My role in this project was enstablishing the game mechanics, contributing to the documentation and creating the basic 2D art assets to deliver the game experience.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jeR8vjmaQik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 
 ## Gameplay Overview
 
@@ -34,47 +53,20 @@ Caravan to the End is a single player management game for mobile devices. It emp
 
 This game blends RPG features such as character classes and turn-based combat, with travelling mechanics similar to the ones of games such as Oregon Trail. The project includes character customization, multiple locations, an economic system, relationship management and a dialogue system.
 
-## Objectives
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-tG2n18hIq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The game was created for a Dundonian game company. The conditions the client set to the game were:
-
-- The game must be playable on mobile.
-- The game must be based on a Caravan management game similar to Oregon Trail.
-- The game is intended to be playable by a large audience: 16+ year-old, casual or hardcore gamers.
+---
 
 ## Development
 
-For this project. the majority of the team members were game designers. Therefore, after the preproduction stage, all designers worked on a secondary role to fill the lack of artists in the group. Although I mainly worked as a designer - creating pre-production material- I also created the majority of 2D assets and worked closely with programmers to help with the implementation.
-During the design stage, which lasted around three weeks, the game designers focused on building a solid concept behind the game. For this purpose, I made a paper prototype to help fixating every aspect of the gameplay.
-For the rest of the module, I spent all my efforts drawing 2D assets and working alongside programmers. My work with 2D art can be found at this [link](https://docs.google.com/document/d/1VDcMwlx-2R0bZPVPG8BOrLjG_7cEkLUpau_JEw6U-sc/edit?usp=sharing). I also wrote a short visual guide to help other designers create smaller pieces of art. This guide can be found at this [link](https://docs.google.com/document/d/1e3SKPG2BHH4xRPQ9R4mNEU3egTuTHNPhKF8pj1WJNtU/edit?usp=sharing)
+For this project. the majority of the team members were game designers. Therefore, after the preproduction stage, all designers worked on a secondary role to fill the lack of artists in the group. Although I mainly worked as a designer - creating pre-production material and writing the documentation along with the other designers - I also created the majority of 2D assets and worked closely with programmers to help with the implementation.
 
-## Player experience
+During the planning, which lasted around three weeks, the game designers focused on building a solid concept behind the game. For this purpose, I made a paper prototype to help enstablishing every aspect of the gameplay.
+For the rest of the module, I spent all my efforts fine-tuning mechanics, drawing 2D assets and working alongside programmers. My work with 2D art can be found at this [link](https://docs.google.com/document/d/1VDcMwlx-2R0bZPVPG8BOrLjG_7cEkLUpau_JEw6U-sc/edit?usp=sharing). I also wrote a short visual guide to help other designers create smaller pieces of art. This guide can be found at this [link](https://docs.google.com/document/d/1e3SKPG2BHH4xRPQ9R4mNEU3egTuTHNPhKF8pj1WJNtU/edit?usp=sharing)
 
-<img src="\assets\images\caravanScreenGeneral.PNG" class="img-fluid rounded" alt="Responsive image">
 
-Caravan to the End is a humorous and bizarre adventure in which all of the weird-looking characters in the game contribute to deliver an easy-going yet challenging mobile experience. The player typical playthrough mainly consists of cycles of two phases: the management phase and the encounter phase.<br><br>
+![]({{site.baseurl}}/assets/images/CaravanScreenshot2.jpg)
 
-During the management phase, the Caravan is stopping in a city and the player may decide to buy or sell resources, hiring more staff and generally prepare for the travel to the next city towards the border of the Underworld. For this purpose, the player must ensure the Caravan has enough food, fuel and medicine to safely reach its next destination. A staff member might also be added to the party and he/she is characterised by a species – devil, calavera, human, etc…- and a set of personality traits.
+## Takeaway from this coursework
 
-<div class="row">
-<div class="col-12 col-xl-6">
-After leaving a city, the player may decide in which room of the caravan each character is going to spend the trip, allowing the characters in the same room to interact with each other, affecting or improving their relationship based on their personality traits. This stat is fundamental during the second phase of the game. The management phase ends when the user chooses the destination of the next trip on the map.<br><br>
-</div>
-<div class="col-12 text-center col-xl-6">
-<img src="\assets\images\caravanRelationships.PNG" class="img-fluid rounded" alt="Responsive image">
-<h6>Characters in the same room develop their relationships</h6>
-</div>
-</div>
-Often during the journey the player can meet other people, thus triggering the encounter phase. During these events, the player has access to dialogues in which multiple options are available. However, the population of the Underworld may be aggressive and encounters might result in a fight. In such case, a turn-based combat phase starts and the player must decide for the actions of each character for surviving the battle. The relationship statuses affect how well a character performs in combat.
-
-<div class="row">
-<div class="col-12 col-xl-6">
- A character that is happy about its companion will fight much better than a character whose relationship with the other members of the staff are unsatisfactory. If the party survives the encounter, the player is rewarded with money or other resources, but characters who are defeated in combat are permanently removed from the party. They can be replaced in cities, but their relationships are lost, meaning the efficacy of a character with good relationships in combat must be developed again with a new character.<br><br><br>
-</div>
-<div class="col-12 text-center col-xl-6">
-<img src="\assets\images\caravanFightScreen.PNG" class="img-fluid rounded" alt="Responsive image">
-<h6>Combat interface</h6>
-</div>
-</div>
-
-The cycle repeats until either the party is defeated or the player manages to get out of the Underworld.
+The production of Caravan to the End was a collaborative project which contributed to improve my teamworking and organisational skills. Coordinating with other developers is the foundation of game development and during this project we, as a team, worked by giving feedback and constructive criticism to each other to achieve a satisfying quality for the final product.

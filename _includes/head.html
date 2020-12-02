@@ -1,83 +1,53 @@
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>{{site.title}}</title>
+  <meta charset="utf-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-  />
+  <!-- mobile responsive meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"> {%-
-  feed_meta -%}
+  <title>{% if page.title %}{{ page.title }} | Andrea Saffirio  {% else %}{{ site.title }}{% endif %}</title>
+  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
 
-  <!-- OMG HI SEO, LOVE YOU SO MUCH -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
-  <link rel="canonical" href="{{ site.url }}" />
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    title="{{ site.title }}"
-    href="{{ site.url }}/feed.xml"
-  />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 
-  <!-- Site URL -->
-  <meta property="og:url" content="{{ site.url }}" />
-  <meta property="og:site_name" content="{{ site.url }}" />
-  <meta property="og:title" content="{{ site.title }}" />
-  <meta property="twitter:title" content="{{ site.title }}" />
-  <meta property="og:type" content="website" />
+  <!-- Main Stylesheet -->
+  <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
-  <!-- Site Image -->
-  <meta property="og:image" content="{{ site.url }}{{ site.seo_image }}" />
-  <meta name="twitter:image" content="{{ site.url }}{{ site.seo_image }}" />
+<!-- Site URL -->
+<meta property="og:url" content="{% if page.url %}{{ page.url }}{% else %}{{ site.url }}{% endif %}" />
+<meta property="og:site_name" content="{% if page.url %}{{ page.url }}{% else %}{{ site.url }}{% endif %}" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | Andrea Saffirio {% else %}{{ site.title }}{% endif %}" />
+<meta property="twitter:title" content="{% if page.title %}{{ page.title }} | Andrea Saffirio {% else %}{{ site.title }}{% endif %}" />
+<meta property="og:type" content="website" />
 
-  <!-- Site Icon -->
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="{{ site.url }}{{site.favicon}}/apple-touch-icon.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="{{ site.url }}{{site.favicon}}/favicon-32x32.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="{{ site.url }}{{site.favicon}}/favicon-16x16.png"
-  />
-  <!--<link rel="manifest" href="{{ site.url }}{{site.favicon}}/site.webmanifest" />-->
-  <link
-    rel="mask-icon"
-    href="{{ site.url }}{{site.favicon}}/safari-pinned-tab.svg"
-    color="#ffaa55"
-  />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
+<!-- Site Image -->
+<meta property="og:image" content="{{ site.url }}{{ site.seo_image }}" />
+<meta name="twitter:image" content="{{ site.url }}{{ site.seo_image }}" />
 
-  <!-- Site Description -->
-  <meta name="description" content="{{ site.description }}" />
-  <meta property="og:description" content="{{ site.description }}" />
-  <meta property="twitter:description" content="{{ site.description }}" />
+<!-- Site Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}{{site.favicon}}/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}{{site.favicon}}/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}{{site.favicon}}/favicon-16x16.png" />
+<!--<link rel="manifest" href="{{ site.url }}{{site.favicon}}/site.webmanifest" />-->
+<link rel="mask-icon" href="{{ site.url }}{{site.favicon}}/safari-pinned-tab.svg" color="#ffaa55"/>
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
 
-  <!-- Keywords-->
-  <meta name="keywords" content="{{ site.keywords }}" />
+<!-- Site Description -->
+<meta name="description" content="{{ site.description }}" />
+<meta property="og:description" content="{{ site.description }}" />
+<meta property="twitter:description" content="{{ site.description }}" />
 
-  <!-- Twitter Details -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+<!-- Twitter Details -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@{{ site.twitter_username }}" />
 
-  <!-- Facebook Details -->
-  <meta property="fb:app_id" content="0" />
+<!-- Facebook Details -->
+<meta property="fb:app_id" content="0" />
 
-  <!-- Pls Stop Invading my code, seo-senpai
-              . . .
-      -->
 </head>

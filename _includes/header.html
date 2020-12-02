@@ -1,72 +1,42 @@
-<header>
-  <div class="row">
-    <div class="col-12">
-      <a
-        class="home-link"
-        href="{{site.url}}"
-        title="Home"
-        style="text-decoration: none;"
-      >
-        <h1 class="header-title">Andrea Saffirio</h1>
-        <p class="sub-title">Game Designer</p>
+<div class="container-full">
+  <!-- begin header -->
+  <header class="header">
+
+    <!--<div class="logo">
+      <a class="logo__link" href="{{ site.baseurl }}/">
+      {%if site.logo %}
+        <img class="logo__image" src="{{ site.baseurl }}/assets/img/{{ site.logo }}" alt="{{ site.title }}">
+      {% else %}
+        {{ site.author.name }}
+      {% endif %}
       </a>
     </div>
-    <div class="col-12 about-section">
-      {% include about-preview.html %}
-    </div>
-    <div class="col-12">
-      <nav class="navbar">
-        <div class="navbar-nav">
-          <a
-            class="nav-item nav-link"
-            href="{{ site.url }}{%- if page.layout == 'home' -%}/#projects{%-endif-%}"
-            >My Projects {% if page.url == site.url %}<span class="sr-only"
-              >(current)</span
-            >{%endif%}</a
-          >
-          {% capture about_page %}{{ site.url }}/about.html{% endcapture %}
-          <a
-            class="nav-item nav-link {% if page.url == about_page %} active {%endif%}"
-            href="{{ site.url }}/about.html"
-            >About Me{% if page.url == about_page %}<span class="sr-only"
-              >(current)</span
-            >{%endif%}</a
-          >
-          <a
-            class="nav-item nav-link"
-            target="_blank"
-            href="{{site.cv_url_download}}"
-            >My CV</a
-          >
-        </div>
-      </nav>
-    </div>
 
-    <div class="col-12 d-lg-none my-3 text-center">
-      {% include social.html %}
-    </div>
+    <nav class="main-nav">
+      <span class="main-nav__open">menu</span>
 
-    <div class="col-12 fixed-bottom social-contacts d-none d-lg-block">
-      {% include social.html %}
-    </div>
-    <!--<div class="col-12 about-section">
+      <div class="main-nav__box">
+        <span class="main-nav__close">Close</span>
 
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="{{site.baseurl}}/" class="nav__link">Home</a>
+          </li>
+          {% for page in site.pages %}
+            {% unless page.name == 'tags.html' or page.name == '404.html' %}
+          {% if page.title %}
+          <li class="nav__item">
+            <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ page.title }}</a>
+          </li>
+          {% endif %}
+            {% endunless %}
+          {% endfor %}
+        </ul>
 
-      <p class="d-lg-none">
-        <a
-          class="text-center"
-          data-toggle="collapse"
-          href="#long-about"
-          role="button"
-          aria-expanded="false"
-          aria-controls="long-about"
-          >Expand About</a
-        >
-      </p>
-    </div>-->
+      </div>
 
-    <div class="col-12 d-lg-block d-none">
-      {%- include footer.html -%}
-    </div>
-  </div>
-</header>
+    </nav>-->
+
+  </header>
+  <!-- end header -->
+</div>

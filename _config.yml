@@ -1,74 +1,61 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title: Andrea Saffirio Video Game Designer - Projects Portfolio
-email: saffirio.andrea@outlook.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Creativity, passion and ambition. I am a Game Designer, graduated at Abertay University.
-  My work consists in planning, designing and creating video games.
-keywords: >- # this means to ignore newlines until "baseurl:"
-  Game, Design, Andrea, Saffirio, Development, Video, Games, Production, Interactive, Indie
+title: Andrea Saffirio – Game Designer
+logo:  # you can add own logo.
+description: Game Designer specialised in prototype creation. My dream job is contributing to interactive experiences with passion, creativity and a set of skills I have developed during my studies and side projects.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://saffirioandrea.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
-# Social
-twitter_username: andremcsaff
-linkedin_username: andrea-saffirio-19928212b
-embedded_email: contact@saffirioandrea.com
-cv_url_download: https://drive.google.com/open?id=1FotZXedSIzVKWfut5QvFaOHZ9wkcH1sZ
-
-permalink: /:categories/:title:output_ext
-seo_image: "/assets/images/ThePainterProjectShot.PNG"
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+seo_image: "/assets/images/Ambition_Screenshot1.jpg"
 favicon: "/assets/images/FavIconFolder"
 
-useHeadlineInHomepage: false
+# Author Settings
+author:
+  name: Andrea Saffirio
+  image: '/assets/images/ProfilePic.PNG'
+  job: Game Designer
+  bio: Game Designer specialised in prototype creation. My dream job is contributing to interactive experiences with passion, creativity and a set of skills I have developed during my studies and side projects.
+  email: contact@saffirioandrea.com.com
 
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: "/category/:name/"
+
+# Contact links
+contact:
+  - name: Twitter
+    link: https://twitter.com/andremcsaff
+  - name: LinkedIn
+    link: https://www.linkedin.com/in/andrea-saffirio-19928212b/
+
+
+# Google Analytics
+google-analytics: # add your identifier. For example UA-99631805-1.
+
 
 # Build settings
-theme: minima
+markdown: kramdown
+permalink: pretty
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
+  - jekyll/tagging
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag-page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
 # Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
