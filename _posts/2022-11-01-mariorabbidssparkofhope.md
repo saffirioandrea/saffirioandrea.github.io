@@ -3,7 +3,7 @@ layout: post
 title:  "Mario+Rabbids: Sparks of Hope"
 date:   2019-12-23 18:15:43 +0200
 categories: games
-image: "/assets/images/mariorabbidscover.jpg"
+image: "/assets/images/MarioRabbidsCover.jpg"
 
 ---
 
