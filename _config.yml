@@ -2,7 +2,7 @@ title: Andrea Saffirio – Senior Technical Game Designer
 logo: # you can add own logo.
 description: Game Designer specialised in prototype creation. My dream job is contributing to interactive experiences with passion, creativity and a set of skills I have developed during my studies and side projects.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://saffirioandrea.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://saffirioandrea.com" # the base hostname & protocol for your site, e.g. http://example.com
 seo_image: "/assets/images/ThePainterProjectShot.PNG"
 favicon: "/assets/images/FavIconFolder"
 
