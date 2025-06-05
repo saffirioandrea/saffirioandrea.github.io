@@ -1,4 +1,4 @@
-title: Andrea Saffirio – Game Designer
+title: Andrea Saffirio – Senior Technical Game Designer
 logo: # you can add own logo.
 description: Game Designer specialised in prototype creation. My dream job is contributing to interactive experiences with passion, creativity and a set of skills I have developed during my studies and side projects.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -10,14 +10,15 @@ favicon: "/assets/images/FavIconFolder"
 author:
   name: Andrea Saffirio
   image: "/assets/images/ProfilePic.png"
-  job: Technical Game Designer
-  bio: My ambition is contributing to exceptional interactive experiences with passion and creativity, while working on refining my professional practices every day.
+  job: Senior Technical Game Designer
+  bio: >
+    Hi! I am a Technical Designer with 5+ years of experience.
+
+    I mainly worked AAA productions: on single and multiplayer games, targeting several game systems, audiences and genres.
   email: contact@saffirioandrea.com
 
 # Contact links
 contact:
-  - name: Twitter
-    link: https://twitter.com/andremcsaff
   - name: LinkedIn
     link: https://www.linkedin.com/in/andrea-saffirio-19928212b/
 
@@ -55,3 +56,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+categories_sorting:
+  - id: "work"
+    title: "Professional Projects"
+  - id: "uni"
+    title: "Academic Projects"

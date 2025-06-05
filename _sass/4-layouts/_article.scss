@@ -1,21 +1,31 @@
 /* Article */
+
+.article_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+}
+
 .article {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   margin: 0px 20px 20px 20px;
 
 
   @media (max-width: $mobile) {
-    display: block;
     min-width: 300px;
 
   }
   @media (min-width: $tablet) {
-    display: inline-block;
-    min-width: 10px;
+    min-width: 160px;
+    max-width: 160px;
   }
   @media (min-width: $desktop) {
-    display: inline-block;
     min-width: 160px;
+    max-width: 160px;
   }
 }
 
@@ -36,11 +46,13 @@
 
 .article__title {
   margin: 0;
+  margin-top: 10px;
+  line-height: 25px;
 
   a {
     font-size: 30px;
     font-weight: 400;
-    line-height: 38px;
+
     color: $gray;
     &:hover {
       color: $primary-color;

@@ -8,6 +8,10 @@
   }
 }
 
+.container__post .nav__link{
+    color: $gray-dark;
+}
+
 .post__head {
   text-align: center;
 }
@@ -41,10 +45,10 @@
 
 .post__content {
   margin-bottom: 45px;
+  font-size: 18px;
+  line-height: 32px;
+  color: $gray;
   p {
-    font-size: 18px;
-    line-height: 32px;
-    color: $gray;
     img {
       margin: 30px 0;
     }

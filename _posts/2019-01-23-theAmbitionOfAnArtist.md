@@ -2,7 +2,7 @@
 layout: post
 title: "The Ambition of an Artist"
 date: 2019-09-28 18:15:43 +0200
-categories: games
+categories: uni
 image: /assets/images/tn_Artist.PNG
 
 gallery:

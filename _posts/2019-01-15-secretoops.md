@@ -2,7 +2,7 @@
 layout: post
 title:  "Secret Oops! (Apple Arcade)"
 date:   2019-12-23 18:15:43 +0200
-categories: games
+categories: work
 image: "/assets/images/SecretOops!Cover.jpg"
 
 ---
@@ -13,7 +13,7 @@ An innovative AR mobile multiplayer game published on Apple Arcade.
 
 ## Project description
 
-Secret Oops! is an innovative cooperative local multiplayer Augmented Reality game where players must collaborate to make the protagonist reach the end of the level without being discovered. Each player can intervene on the world action by tapping and disabling traps through the smartphone. Traps might intersecate with each other or require multiple players to be switched off, so all partecipants must collaborate to win.
+Secret Oops! is an innovative cooperative local mobile multiplayer Augmented Reality game where players must collaborate to make the protagonist reach the end of the level without being discovered. Each player can intervene on the world action by tapping and disabling traps through the smartphone. Traps might intersecate with each other or require multiple players to be switched off, so all partecipants must collaborate to win.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mk6gGXhRzD8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Extrema Ratio"
 date: 2017-09-28 18:15:43 +0200
-categories: games
+categories: uni
 image: "/assets/images/Honours1.jpg"
 description: "Honours project about a different method of controlling multiple character in a TPS shooter"
 gallery:
