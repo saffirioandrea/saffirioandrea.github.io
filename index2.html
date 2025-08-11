@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="container">
+  <!-- begin author -->
+  <section class="author" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="600">
+    <div class="author__inner"  style="text-align:center;">
+  <img src="{{site.url}}{{site.author.image}}" alt="{{site.author.name}}" class="author__img">
+      <h1 class="author__name">{{ site.author.name }}</h1>
+      <h1 class="author__job">{{ site.author.job }}</h1>
+      <p class="author__bio">{{ site.author.bio | newline_to_br }}</p>
+      <div class="author__more">
+        <a href="mailto:{{site.author.email}}?subject=Hello" class="say-hello">Say hello</a>
+        <a href="https://www.linkedin.com/in/andrea-saffirio-19928212b/" class="know-more">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+  <!-- end author -->
+</div>
+
+<div class="container article_container" style="text-align:center;">
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts %}
+    <div class="article" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="1000">
+      {% assign featured_image = post.thumbnail | default: post.image %}
+      {% if featured_image %}
+      <div class="article__image-box">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="article__image" style="background-image: url({{ site.baseurl }}{{ featured_image }})"></a>
+      </div>
+      {% endif %}
+      <div class="article__content">
+        <h2 class="article__title">
+          <a href="{{ post.url | prepend: site.baseurl }}"><home-title-font>{{ post.title }}</home-title-font></a>
+        </h2>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+</div>
