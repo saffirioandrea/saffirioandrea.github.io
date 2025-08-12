@@ -4,7 +4,9 @@ title: "The Ambition of an Artist"
 date: 2019-09-28 18:15:43 +0200
 categories: uni
 image: /assets/images/tn_Artist.PNG
-
+thumbnail: "ambition-of-an-artist_thumb.jpg"
+description: >
+  The Ambition of an Artist was part of the coursework of a University module which required to create a five-minute-long video of a game prototype. My work consisted of  creating a narrative experience featuring puzzle solving and environmental interaction. Throughout the game, the player can access to worlds inside paintings and, by exploring them, finding clues and collecting information.
 gallery:
   - video: https://www.youtube.com/embed/DcB6w8BZGmg
   - image: "/assets/images/AmbitionOfAnArtist.jpg"

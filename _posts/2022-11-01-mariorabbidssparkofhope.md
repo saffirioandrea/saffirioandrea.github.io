@@ -4,7 +4,10 @@ title:  "Mario+Rabbids: Sparks of Hope"
 date:   2019-12-23 18:15:43 +0200
 categories: work
 image: "/assets/images/MarioRabbidsCover.jpg"
-
+thumbnail: "mario-rabbids-soh_thumb.jpg"
+description: >
+    Mario+Rabbids: Sparks of Hope is the sequel of Mario+Rabbids: Kingdom Battle. Produced by Ubisoft Milan, this is a Turn-based Strategy game that expands upon the foundations of the first game of the series. The exploration is quite more vast and varied, while the battle encounters are more dynamic thanks to a free-grid movement and the addition of the Sparks.
+role: "Technical Game Designer"
 ---
 
 Second Nintendo Switch instalment of the Ubisoft's Series Mario+Rabbids

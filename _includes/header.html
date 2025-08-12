@@ -1,42 +1,66 @@
-<div class="container-full">
-  <!-- begin header -->
-  <header class="header">
+<!-- Navbar -->
+<header class="mb-auto">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg nav-masthead">
+        <div class="container">
 
-    <!--<div class="logo">
-      <a class="logo__link" href="{{ site.baseurl }}/">
-      {%if site.logo %}
-        <img class="logo__image" src="{{ site.baseurl }}/assets/img/{{ site.logo }}" alt="{{ site.title }}">
-      {% else %}
-        {{ site.author.name }}
-      {% endif %}
-      </a>
-    </div>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <nav class="main-nav">
-      <span class="main-nav__open">menu</span>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ '/about' | relative_url }}">About</a>
+                    </li>
 
-      <div class="main-nav__box">
-        <span class="main-nav__close">Close</span>
+                    <!-- Professional Projects Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{{ '/portfolio' | relative_url }}"
+                            id="professionalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Professional Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="professionalDropdown">
+                            <li><a class="dropdown-item" href="{{ '/portfolio/project1' | relative_url }}">Project
+                                    1</a></li>
+                            <li><a class="dropdown-item" href="{{ '/portfolio/project2' | relative_url }}">Project
+                                    2</a></li>
+                            <li><a class="dropdown-item" href="{{ '/portfolio/project3' | relative_url }}">Project
+                                    3</a></li>
+                            <li><a class="dropdown-item" href="{{ '/portfolio/project4' | relative_url }}">Project
+                                    4</a></li>
+                        </ul>
+                    </li>
 
-        <ul class="nav__list list-reset">
-          <li class="nav__item">
-            <a href="{{site.baseurl}}/" class="nav__link">Home</a>
-          </li>
-          {% for page in site.pages %}
-            {% unless page.name == 'tags.html' or page.name == '404.html' %}
-          {% if page.title %}
-          <li class="nav__item">
-            <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ page.title }}</a>
-          </li>
-          {% endif %}
-            {% endunless %}
-          {% endfor %}
-        </ul>
+                    <!-- Student Projects Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{{ '/student-projects' | relative_url }}"
+                            id="studentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Student Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="studentDropdown">
+                            <li><a class="dropdown-item"
+                                    href="{{ '/student-projects/project-a' | relative_url }}">Student Project A</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="{{ '/student-projects/project-b' | relative_url }}">Student Project B</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="{{ '/student-projects/project-c' | relative_url }}">Student Project C</a>
+                            </li>
+                        </ul>
+                    </li>
 
-      </div>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ '/contatti' | relative_url }}">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-  </header>
-  <!-- end header -->
-</div>
+</header>

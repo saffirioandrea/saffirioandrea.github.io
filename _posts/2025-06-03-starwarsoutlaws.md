@@ -4,13 +4,14 @@ title: "Star Wars Outlaws"
 date: 2025-05-28 18:15:43 +0200
 categories: work
 image: "/assets/images/starwarsoutlaws_cover.jpg"
-thumbnail: "/assets/images/starwarstn.jpg"
-description: "An action-packed TPS developed by Massive Entertainment with a vast open world to explore"
+thumbnail: "starwars-outlaw_thumb.jpg"
+description: >
+  Star Wars Outlaws was an incredible opportunity that I got for working with a team at a Level Design capacity. The ambitious project had plenty of main quests and side activities and a smaller team from Ubisoft Milan was tasked to work on several of those.
 gallery:
   - video: https://www.youtube.com/embed/I7q9b8eb9zA
 trailer:
 gameplay: "https://drive.google.com/file/d/1Z-xfjjRj5lx9Upp6Ly28q4vhiN4e0RZR/preview"
-
+role: "Level Designer and System Designer"
 ---
 
 Star Wars Outlaws was an incredible opportunity that I got for working with a team at a Level Design capacity. The ambitious project had plenty of main quests and side activities and a smaller team from Ubisoft Milan was tasked to work on several of those.

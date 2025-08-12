@@ -4,7 +4,9 @@ title: "Extrema Ratio"
 date: 2017-09-28 18:15:43 +0200
 categories: uni
 image: "/assets/images/Honours1.jpg"
-description: "Honours project about a different method of controlling multiple character in a TPS shooter"
+thumbnail: "honours-project_thumb.jpg"
+description: >
+  The concept of Extrema Ratio was developed as my Honours Project. The purpose of the project was to create an alternative method for controlling multiple protagonist characters. The development lasted four months circa.
 gallery:
   - video: https://www.youtube.com/embed/I7q9b8eb9zA
   - image: ""

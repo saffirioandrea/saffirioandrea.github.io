@@ -1,69 +1,44 @@
 ---
 layout: default
 title: Home
+
+role: "Senior Technical Game Designer"
+about: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+    anim.
+    
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
 ---
 
 <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
-    <!-- Navbar -->
-    <header class="mb-auto">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg nav-masthead">
-            <div class="container">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ '/about' | relative_url }}">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ '/portfolio' | relative_url }}">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ '/contatti' | relative_url }}">Contatti</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+    <!-- Header-->
+    {% include header.html %}
+    
     <!-- Cover Main Content -->
     <main class="px-3">
         <div class="row align-items-center">
             <!-- Foto - nascosta su mobile, piccola e quadrata su mobile -->
             <div class="col-md-5 text-center">
-                <img src="https://placehold.co/200x400" alt="Profile Photo"
+                <img src="{{ site.baseurl }}{{site.author.image-big}}" alt="Profile Photo"
                     class="profile-img rounded d-none d-md-block">
-                <img src="https://placehold.co/80x80" alt="Profile Photo"
+                <img src="{{ site.baseurl }}{{site.author.image}}" alt="Profile Photo"
                     class="profile-img-mobile rounded-circle d-md-none mb-3">
             </div>
 
             <!-- Contenuto testo -->
             <div class="col-md-6 osset-md-1 text-md-start text-center">
-                <h1>Mario Rossi</h1>
-                <h3 class="text-muted mb-3">Game Designer</h3>
+                <h1>Andrea Saffirio</h1>
+                <h3 class="text-muted mb-3">{{page.role}}</h3>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim.</p>
-
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
-
+                {{ page.about | markdownify }}
                 <div class="mt-4">
-                    <a href="#projects" class="btn btn-lg btn-primary me-3">View Portfolio</a>
-                    <a href="#" class="btn btn-lg btn-outline-light">Contact Me</a>
+                    <a href="mailto: {{ site.author.email }} " class="btn btn-primary me-3">Say Hello!</a>
+                    <a href="{{ site.contact[0].link }}" target="_blank">Linkedin</a>
                 </div>
             </div>
         </div>
@@ -71,11 +46,13 @@ title: Home
 
     <!-- Call to action della cover -->
     <div class="mt-auto py-4 cover-cta">
-        <p class="h4 fw-bold mb-0">I miei progetti</p>
-        <div class="scroll-indicator mt-2">
-            <span></span>
-            <span></span>
-            <span></span>
+        <p class="h2 fw-bold mb-0">My Works</p>
+        <div class="mouse mt-3">
+
+            <div class="mouse-icon">
+                <span class="mouse-wheel"></span>
+            </div>
+
         </div>
     </div>
 </div>
@@ -83,28 +60,31 @@ title: Home
 <!-- Sezione Projects -->
 <section id="projects" class="py-5 bg-light text-dark">
     <div class="container">
-        <h2 class="mb-5 text-center">Projects</h2>
+        <h2 class="mb-5 text-center">Featured Professional Work</h2>
 
         {% if site.posts.size > 0 %}
         {% for post in site.posts %}
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
         <div class="row mb-5 project-container align-items-center">
             {% assign featured_image = post.thumbnail | default: post.image %}
             {% if featured_image %}
-            <div class="project-img-box col-md-6 {% if forloop.index0 % 2 == 0 %}order-md-1{% else %}order-md-2{% endif %}">
-                <img src="{{ site.baseurl }}{{ featured_image }}" alt="{{post.title}}" class="img-fluid project-img rounded">
+            <div class="project-img-box col-md-6 {% if thecycle == 'odd' %}order-md-1{% else %}order-md-2{% endif %}">
+                <div class="project-img-box-wrapper rounded">
+                    <img src="{{ site.baseurl }}assets/images/thumbnails/{{ featured_image }}" alt="{{post.title}}"
+                        class="project-img">
+                </div>
             </div>
             {% endif %}
-            <div class="post-details-box col-md-6 {% if forloop.index0 % 2 == 0 %}order-md-2{% else %}order-md-1{% endif %}">
+            <div
+                class="post-details-box col-md-6 mt-md-0 mt-4 {% if thecycle == 'odd' %}order-md-2{% else %}order-md-1{% endif %}">
                 <h3>{{ post.title }}</h3>
-                <!-- <h5 class="text-muted">Gioco di Avventura</h5> -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+                <h5 class="text-muted">{{post.role}}</h5>
+                <p class="mt-3">{{ post.description }}</p>
                 <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary">Read More</a>
             </div>
         </div>
         {% endfor %}
         {% endif %}
-        
+
     </div>
 </section>

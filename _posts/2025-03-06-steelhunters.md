@@ -3,13 +3,11 @@ layout: post
 title:  "SteelHunters"
 date:   2025-06-03 18:15:43 +0200
 categories: work
-thumbnail: "/assets/images/steelhunters_tn.png"
+thumbnail: "steel-hunters_thumb.jpg"
 image: "/assets/images/steelhunters_cover.jpg"
-
----
-
-A new multiplayer game from the company that made World of Tanks
-
+description: >
+    A new multiplayer game from the company that made World of Tanks
+role: "Senior Technical Game Designer"
 ---
 
 ## Project description
@@ -21,12 +19,16 @@ This is the first online multiplayer game I ever worked on. SteelHunters is stil
 ---
 
 ## Specifics of the project
-<!-- https://via.placeholder.com/600x500 -->
+
+<div class="clearfix">
+
 - I have been working as a System and Technical Designer
 - The project is based on Unreal Engine 5
 - It is a PvPvE multiplayer game
 
 ![]({{site.baseurl}}/assets/images/steelhunters_gameplay.jpg)
+
+</div>
 
 ---
 
