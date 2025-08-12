@@ -3,147 +3,108 @@ layout: default
 title: Home
 ---
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content-wrapper">
-        <div class="container h-100">
-            <div class="row align-items-center h-100 py-5">
-                <!-- Image Column -->
-                <div class="col-lg-4 col-md-5 col-sm-6 col-8 mx-auto mb-4 mb-md-0">
-                    <img src="https://placehold.co/400x500/f8f9fa/6c757d?text=Andrea+Saffirio" 
-                         alt="Andrea Saffirio" 
-                         class="hero-image img-fluid">
+<div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+    <!-- Navbar -->
+    <header class="mb-auto">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg nav-masthead">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ '/about' | relative_url }}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ '/portfolio' | relative_url }}">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ '/contatti' | relative_url }}">Contatti</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Content Column -->
-                <div class="col-lg-8 col-md-7">
-                    <div class="hero-content">
-                        <h1 class="display-4 display-md-3 display-lg-2 fw-bold mb-2">Andrea Saffirio</h1>
-                        <p class="lead fs-4 fs-md-3 fs-lg-2 text-primary mb-4">Senior Technical Game Designer</p>
-                        <p class="fs-6 fs-md-5 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p class="fs-6 fs-md-5 mb-4 d-none d-md-block">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div class="mt-4">
-                            <a href="{{ '/portfolio' | relative_url }}" class="btn btn-primary me-2 me-md-3 mb-2 mb-md-0">Vedi Portfolio</a>
-                            <a href="{{ '/contatti' | relative_url }}" class="btn btn-outline-primary mb-2 mb-md-0">Contattami</a>
-                        </div>
-                    </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cover Main Content -->
+    <main class="px-3">
+        <div class="row align-items-center">
+            <!-- Foto - nascosta su mobile, piccola e quadrata su mobile -->
+            <div class="col-md-5 text-center">
+                <img src="https://placehold.co/200x400" alt="Profile Photo"
+                    class="profile-img rounded d-none d-md-block">
+                <img src="https://placehold.co/80x80" alt="Profile Photo"
+                    class="profile-img-mobile rounded-circle d-md-none mb-3">
+            </div>
+
+            <!-- Contenuto testo -->
+            <div class="col-md-6 osset-md-1 text-md-start text-center">
+                <h1>Mario Rossi</h1>
+                <h3 class="text-muted mb-3">Game Designer</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim.</p>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+
+                <div class="mt-4">
+                    <a href="#projects" class="btn btn-lg btn-primary me-3">View Portfolio</a>
+                    <a href="#" class="btn btn-lg btn-outline-light">Contact Me</a>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Hook Section at Bottom -->
-    <div class="hero-hook px-3">
-        <h2 class="h1 h2-sm h3-md fw-semibold">My main works</h2>
-        <div class="scroll-indicator d-none d-md-block"></div>
-    </div>
-</section>
+    </main>
 
-<!-- Projects Section -->
-<section class="projects-section">
+    <!-- Call to action della cover -->
+    <div class="mt-auto py-4 cover-cta">
+        <p class="h4 fw-bold mb-0">I miei progetti</p>
+        <div class="scroll-indicator mt-2">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+
+<!-- Sezione Projects -->
+<section id="projects" class="py-5 bg-light text-dark">
     <div class="container">
-        <!-- Project 1 - Text Left, Image Right -->
-        <article class="project-item">
-            <div class="row align-items-center gy-4">
-                <div class="col-lg-6 col-md-6">
-                    <div class="project-content pe-lg-4">
-                        <h3 class="project-title h2 h3-sm fw-semibold">Fantasy RPG Mobile</h3>
-                        <p class="project-subtitle text-primary fs-5 fs-6-sm fw-medium mb-3">Senior Technical Game Designer</p>
-                        <p class="project-description fs-6 fs-7-sm mb-3">RPG mobile con meccaniche innovative di crafting e combat system turn-based. Responsabile del design delle meccaniche core, bilanciamento economico e implementazione tecnica delle feature principali. Un progetto che ha raggiunto oltre 500K download nei primi sei mesi.</p>
-                        <p class="project-tech fs-6 fs-7-sm mb-4"><strong>Tecnologie:</strong> Unity 3D, C#, Analytics, Monetization Design</p>
-                        <a href="#" class="btn btn-outline-primary">Vedi Dettagli</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <img src="https://placehold.co/600x400/3498db/ffffff?text=Fantasy+RPG+Mobile" 
-                         alt="Fantasy RPG Mobile" 
-                         class="project-image img-fluid">
-                </div>
-            </div>
-        </article>
+        <h2 class="mb-5 text-center">Projects</h2>
 
-        <!-- Project 2 - Image Left, Text Right -->
-        <article class="project-item">
-            <div class="row align-items-center gy-4">
-                <div class="col-lg-6 col-md-6 order-md-1 order-2">
-                    <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Puzzle+Adventure+Console" 
-                         alt="Puzzle Adventure Console" 
-                         class="project-image img-fluid">
-                </div>
-                <div class="col-lg-6 col-md-6 order-md-2 order-1">
-                    <div class="project-content ps-lg-4">
-                        <h3 class="project-title h2 h3-sm fw-semibold">Puzzle Adventure Console</h3>
-                        <p class="project-subtitle text-primary fs-5 fs-6-sm fw-medium mb-3">Lead Game Designer</p>
-                        <p class="project-description fs-6 fs-7-sm mb-3">Avventura narrativa con puzzle ambientali complessi. Design completo dell'esperienza utente, level design e direzione creativa per un team di 8 persone durante 24 mesi di sviluppo. Vincitore di diversi premi indie.</p>
-                        <p class="project-tech fs-6 fs-7-sm mb-4"><strong>Tecnologie:</strong> Unreal Engine 4, Blueprint, Narrative Systems</p>
-                        <a href="#" class="btn btn-outline-primary">Vedi Dettagli</a>
-                    </div>
-                </div>
+        {% if site.posts.size > 0 %}
+        {% for post in site.posts %}
+        <div class="row mb-5 project-container align-items-center">
+            {% assign featured_image = post.thumbnail | default: post.image %}
+            {% if featured_image %}
+            <div class="project-img-box col-md-6 {% if forloop.index0 % 2 == 0 %}order-md-1{% else %}order-md-2{% endif %}">
+                <img src="{{ site.baseurl }}{{ featured_image }}" alt="{{post.title}}" class="img-fluid project-img rounded">
             </div>
-        </article>
-
-        <!-- Project 3 - Text Left, Image Right -->
-        <article class="project-item">
-            <div class="row align-items-center gy-4">
-                <div class="col-lg-6 col-md-6">
-                    <div class="project-content pe-lg-4">
-                        <h3 class="project-title h2 h3-sm fw-semibold">Strategy Multiplayer PC</h3>
-                        <p class="project-subtitle text-primary fs-5 fs-6-sm fw-medium mb-3">Technical Game Designer</p>
-                        <p class="project-description fs-6 fs-7-sm mb-3">RTS multiplayer competitivo con focus su bilanciamento delle fazioni e meta game evoluto. Progettazione di algoritmi di matchmaking e sistemi di progressione giocatore. Gestione di community competitiva di oltre 100K giocatori attivi.</p>
-                        <p class="project-tech fs-6 fs-7-sm mb-4"><strong>Tecnologie:</strong> Custom Engine, C++, Networking, Analytics</p>
-                        <a href="#" class="btn btn-outline-primary">Vedi Dettagli</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <img src="https://placehold.co/600x400/2ecc71/ffffff?text=Strategy+Multiplayer+PC" 
-                         alt="Strategy Multiplayer PC" 
-                         class="project-image img-fluid">
-                </div>
+            {% endif %}
+            <div class="post-details-box col-md-6 {% if forloop.index0 % 2 == 0 %}order-md-2{% else %}order-md-1{% endif %}">
+                <h3>{{ post.title }}</h3>
+                <!-- <h5 class="text-muted">Gioco di Avventura</h5> -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary">Read More</a>
             </div>
-        </article>
-
-        <!-- Project 4 - Image Left, Text Right -->
-        <article class="project-item">
-            <div class="row align-items-center gy-4">
-                <div class="col-lg-6 col-md-6 order-md-1 order-2">
-                    <img src="https://placehold.co/600x400/9b59b6/ffffff?text=VR+Experience+Prototype" 
-                         alt="VR Experience Prototype" 
-                         class="project-image img-fluid">
-                </div>
-                <div class="col-lg-6 col-md-6 order-md-2 order-1">
-                    <div class="project-content ps-lg-4">
-                        <h3 class="project-title h2 h3-sm fw-semibold">VR Experience Prototype</h3>
-                        <p class="project-subtitle text-primary fs-5 fs-6-sm fw-medium mb-3">VR Design Specialist</p>
-                        <p class="project-description fs-6 fs-7-sm mb-3">Prototipo esplorativo per esperienza VR immersiva con interazioni gestuali naturali. Ricerca e sviluppo di nuove forme di gameplay specifiche per realtà virtuale. Collaborazione con team di ricerca universitaria.</p>
-                        <p class="project-tech fs-6 fs-7-sm mb-4"><strong>Tecnologie:</strong> Unity XR, Oculus SDK, Hand Tracking, Spatial Audio</p>
-                        <a href="#" class="btn btn-outline-primary">Vedi Dettagli</a>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </div>
-    
-    <div class="text-center mt-5">
-        <a href="{{ '/portfolio' | relative_url }}" class="btn btn-primary btn-lg">Vedi Tutti i Progetti</a>
+        </div>
+        {% endfor %}
+        {% endif %}
+        
     </div>
 </section>
-
-<script>
-// Intersection Observer per animazioni
-document.addEventListener('DOMContentLoaded', function() {
-    const projectItems = document.querySelectorAll('.project-item');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, {
-        threshold: 0.1
-    });
-    
-    projectItems.forEach(item => {
-        observer.observe(item);
-    });
-});
-</script>
