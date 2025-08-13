@@ -6,7 +6,7 @@
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -19,41 +19,36 @@
                     </li>
 
                     <!-- Professional Projects Dropdown -->
+                    {% assign post_work = site.categories.work | sort: "date" | reverse %}
+                    {% if post_work.size > 0 %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="{{ '/portfolio' | relative_url }}"
                             id="professionalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Professional Projects
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="professionalDropdown">
-                            <li><a class="dropdown-item" href="{{ '/portfolio/project1' | relative_url }}">Project
-                                    1</a></li>
-                            <li><a class="dropdown-item" href="{{ '/portfolio/project2' | relative_url }}">Project
-                                    2</a></li>
-                            <li><a class="dropdown-item" href="{{ '/portfolio/project3' | relative_url }}">Project
-                                    3</a></li>
-                            <li><a class="dropdown-item" href="{{ '/portfolio/project4' | relative_url }}">Project
-                                    4</a></li>
+                            {% for post in post_work %}
+                            <li><a class="dropdown-item" href="{{ post.url }}">{{post.title}}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
+                    {% endif %}
 
                     <!-- Student Projects Dropdown -->
+                    {% assign post_uni = site.categories.uni | sort: "date" | reverse %}
+                    {% if post_uni.size > 0 %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="{{ '/student-projects' | relative_url }}"
                             id="studentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Student Projects
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="studentDropdown">
-                            <li><a class="dropdown-item"
-                                    href="{{ '/student-projects/project-a' | relative_url }}">Student Project A</a>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="{{ '/student-projects/project-b' | relative_url }}">Student Project B</a>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="{{ '/student-projects/project-c' | relative_url }}">Student Project C</a>
-                            </li>
+                            {% for post in post_uni %}
+                            <li><a class="dropdown-item" href="{{ post.url }}">{{post.title}}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
+                    {% endif %}
 
                     <li class="nav-item">
                         <a class="nav-link" href="{{ '/contatti' | relative_url }}">Contacts</a>

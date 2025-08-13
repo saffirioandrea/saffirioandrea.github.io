@@ -5,6 +5,10 @@ html {
     font-optical-sizing: auto;
     overflow-x: hidden;
 }
+body.no-scroll,
+html.no-scroll {
+    overflow: hidden;
+}
 
 h1,
 h2,
@@ -31,24 +35,96 @@ h6 {
     text-align: left;
 }
 
+.navbar-toggler{
+    z-index: 1050 !important;
+}
+
 @media (max-width: 991.98px) {
     .navbar-collapse {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background: white;
         color: black;
         padding-top: 4rem;
-        z-index: 9999;
+        z-index: 1049;
+        overflow-y: auto;
+    }
+
+    #navbarNav.show {
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navbar-collapse .navbar-nav {
+        text-align: left;
+        padding: 0 2rem;
+    }
+
+    .navbar-collapse .nav-item {
+        border-bottom: 1px solid #ccc;
     }
 
     .navbar-collapse .nav-link {
         color: black !important;
         font-size: 1.5rem;
-        text-align: center;
-        padding: 1rem;
+        text-align: left !important;
+        padding: 1rem 0 !important;
+        position: relative;
+        display: block;
+    }
+
+    /* "-" per elementi normali */
+    .navbar-collapse .nav-item:not(.dropdown) .nav-link::before {
+        font-weight: 100;
+        font-size: 2rem;
+        content: "- ";
+        margin-right: 0.2rem;
+    }
+
+    /* "+" per dropdown chiusi, "-" per dropdown aperti */
+    .navbar-collapse .nav-item.dropdown .nav-link::before {
+        font-weight: 100;
+        font-size: 2rem;
+        content: "+ ";
+        margin-right: 0.2rem;
+        transition: all 0.3s ease;
+    }
+    .navbar-collapse .nav-item.dropdown .nav-link::after {
+        content: none;
+    }
+
+    .navbar-collapse .nav-item.dropdown.show .nav-link::before {
+        content: "- ";
+    }
+
+    /* Stili per i dropdown menu */
+    .navbar-collapse .dropdown-menu {
+        position: static;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        padding-left: 2rem;
+    }
+
+    .navbar-collapse .dropdown-item {
+        color: black;
+        font-size: 1.3rem;
+        padding: 0.8rem 0;
+        border-bottom: 1px solid #ccc;
+        background: transparent;
+    }
+
+    .navbar-collapse .dropdown-item::before {
+        margin-right: 0.5rem;
+    }
+
+    .navbar-collapse .dropdown-item:hover {
+        background-color: #f8f9fa;
     }
 }
 
@@ -132,3 +208,87 @@ h6 {
     0%, 100% { transform: translateY(0); }
     50%      { transform: translateY(4px); }
 }
+
+
+/* ================ POST 
+/* Hero Section Styles */
+  .hero-section {
+    min-height: 35vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+
+  @media (min-width: 768px) {
+    .hero-section {
+      min-height: 30vh;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .hero-section {
+      min-height: 40vh;
+    }
+  }
+
+  .hero-bg img {
+    object-fit: cover;
+  }
+
+  .hero-content {
+    min-height: inherit;
+    z-index: 2;
+  }
+
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .post-content .content {
+    text-align: left;
+  }
+
+  /* Post Content Styles */
+  .post-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  @media (min-width: 768px) {
+    .post-content {
+      font-size: 1.125rem;
+      line-height: 1.8;
+    }
+  }
+
+  .post-content .content h2,
+  .post-content .content h3,
+  .post-content .content h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-content .content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .post-content .content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .post-content .display-4 {
+      font-size: 2rem !important;
+    }
+
+    .post-content .lead {
+      font-size: 1rem !important;
+    }
+
+    .hero-section {
+      min-height: 50vh;
+    }
+  }

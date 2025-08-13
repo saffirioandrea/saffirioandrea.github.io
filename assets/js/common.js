@@ -1,49 +1,32 @@
 $(document).ready(function() {
   'use strict';
 
-  var headerOverlay = $('.header__overlay'),
-    menuList = $('.main-nav__box'),
-    menuOpenIcon = $('.main-nav__open'),
-    menuCloseIcon = $('.main-nav__close');
-
-
   /* =======================
   // Menu and Navigation
   ======================= */
-  menuOpenIcon.click(function() {
-    menuOpen();
-  })
 
-  menuCloseIcon.click(function () {
-    menuClose();
-  })
+  var $navbar = $('#navbarNav');
 
-  headerOverlay.click(function () {
-    menuClose();
-    searchClose();
-  });
-
-  function menuOpen() {
-    menuList.addClass('visible');
-    headerOverlay.addClass('visible');
-  }
-
-  function menuClose() {
-    menuList.removeClass('visible');
-    headerOverlay.removeClass('visible');
-  }
-
+  $navbar
+    .on('show.bs.collapse', function () {
+      $('body').addClass('no-scroll'); // blocca scroll pagina
+      $('html').addClass('no-scroll'); // blocca scroll pagina      
+    })
+    .on('hidden.bs.collapse', function () {
+      $('body').removeClass('no-scroll'); // riabilita scroll pagina
+      $('html').removeClass('no-scroll'); // blocca scroll pagina
+    });
 
   /* ================================
   // AOS - Animate On Scroll Library
-  ================================ */
-  AOS.init();
+  ================================ 
+  AOS.init();*/
 
 
   /* =======================
   // Responsive Videos
   ======================= */
-  $(".post__content, .page__content").fitVids({
+  $(".post-content").fitVids({
     customSelector: ['iframe[src*="ted.com"]']
   });
 
