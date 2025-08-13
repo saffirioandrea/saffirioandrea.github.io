@@ -2,22 +2,28 @@
 layout: default
 ---
 
-<div class="container">
-  <!-- begin page -->
-  <article class="page">
+<div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+    <!-- Header-->
+    {% include header.html %}
 
-    <div class="page__head" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
-      <h1 class="page__title">{{ page.title | escape }}</h1>
-      {% if page.image %}
-      <div class="page-image" style="background-image: url({{site.baseurl}}{{page.image}})"></div>
-      {% endif %}
-    </div>
+    <!-- Cover Main Content -->
+    <main class="px-3 mb-auto ">
+        <div class="row align-items-start">
+            <!-- Foto - nascosta su mobile, piccola e quadrata su mobile -->
+            <div class="col-md-5 text-center">
+              <img src="{{ site.baseurl }}{{page.image}}" alt="{{page.title}}"
+                    class="img-fluid rounded d-none d-md-block">
+                {% if page.image-mobile %}
+                <img src="{{ site.baseurl }}{{page.image-mobile}}" alt="{{page.title}}"
+                    class="profile-img-mobile rounded-circle d-md-none mb-3">
+                {% endif %}
+            </div>
 
-    <div class="page__content" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="100" data-aos-duration="700">
-    {{ content }}
-    </div>
-
-  </article>
-  <!-- end page -->
-  
+            <!-- Contenuto testo -->
+            <div class="col-md-6 text-md-start">
+                <h1>{{page.title}}</h1>
+                {{ content | markdownify }}
+            </div>
+        </div>
+    </main>
 </div>

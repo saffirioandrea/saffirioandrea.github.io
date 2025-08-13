@@ -6,19 +6,16 @@ role: "Senior Technical Game Designer"
 about: |
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-    
+
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
     anim.
-    
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
 ---
 
 <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
     <!-- Header-->
     {% include header.html %}
-    
+
     <!-- Cover Main Content -->
     <main class="px-3">
         <div class="row align-items-center">
@@ -31,11 +28,32 @@ about: |
             </div>
 
             <!-- Contenuto testo -->
-            <div class="col-md-6 osset-md-1 text-md-start text-center">
+            <div class="col-md-6 text-md-start text-center">
                 <h1>Andrea Saffirio</h1>
                 <h3 class="text-muted mb-3">{{page.role}}</h3>
 
                 {{ page.about | markdownify }}
+                <div class="my-5" id="worked-with-logos">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-6 col-sm-3 text-center">
+                            <img src="{{ site.baseurl }}assets/images/logos/massive-logo.png"
+                                alt="Massive Entertainment" class="worked-logo">
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <img src="{{ site.baseurl }}assets/images/logos/ubisoft-logo.png" alt="Ubisoft"
+                                class="worked-logo">
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <img src="{{ site.baseurl }}assets/images/logos/wargaming-logo.png" alt="Wargaming"
+                                class="worked-logo text-center">
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <img src="{{ site.baseurl }}assets/images/logos/dps-logo.png" alt="DPS Studios"
+                                class="worked-logo">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="mt-4">
                     <a href="mailto: {{ site.author.email }} " class="btn btn-primary me-3">Say Hello!</a>
                     <a href="{{ site.contact[0].link }}" target="_blank">Linkedin</a>

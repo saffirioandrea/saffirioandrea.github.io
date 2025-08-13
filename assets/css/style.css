@@ -5,6 +5,7 @@ html {
     font-optical-sizing: auto;
     overflow-x: hidden;
 }
+
 body.no-scroll,
 html.no-scroll {
     overflow: hidden;
@@ -35,8 +36,32 @@ h6 {
     text-align: left;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     z-index: 1050 !important;
+}
+
+.worked-logo {
+    height: 60px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.worked-logo:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .worked-logo {
+        height: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .worked-logo {
+        height: 40px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -92,6 +117,7 @@ h6 {
         margin-right: 0.2rem;
         transition: all 0.3s ease;
     }
+
     .navbar-collapse .nav-item.dropdown .nav-link::after {
         content: none;
     }
@@ -171,7 +197,7 @@ h6 {
     margin: 0 auto;
     position: relative;
     text-align: center;
-    
+
     animation: mouse-bounce 1.6s ease-in-out infinite;
 }
 
@@ -186,109 +212,147 @@ h6 {
     -moz-animation: 1.6s ease infinite wheel-up-down;
     animation: 1.6s ease infinite wheel-up-down;
 }
+
 @-webkit-keyframes wheel-up-down {
-    0%   { margin-top: 2px; opacity: 0; }
-    30%  { opacity: 1; }
-    100% { margin-top: 10px; opacity: 0; }
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 10px;
+        opacity: 0;
+    }
 }
 
 @-moz-keyframes wheel-up-down {
-    0%   { margin-top: 2px; opacity: 0; }
-    30%  { opacity: 1; }
-    100% { margin-top: 10px; opacity: 0; }
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 10px;
+        opacity: 0;
+    }
 }
 
 @keyframes wheel-up-down {
-    0%   { margin-top: 2px; opacity: 0; }
-    30%  { opacity: 1; }
-    100% { margin-top: 10px; opacity: 0; }
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 10px;
+        opacity: 0;
+    }
 }
 
 @keyframes mouse-bounce {
-    0%, 100% { transform: translateY(0); }
-    50%      { transform: translateY(4px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(4px);
+    }
 }
 
 
 /* ================ POST 
 /* Hero Section Styles */
-  .hero-section {
+.hero-section {
     min-height: 35vh;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .hero-section {
-      min-height: 30vh;
+        min-height: 30vh;
     }
-  }
+}
 
-  @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .hero-section {
-      min-height: 40vh;
+        min-height: 40vh;
     }
-  }
+}
 
-  .hero-bg img {
+.hero-bg img {
     object-fit: cover;
-  }
+}
 
-  .hero-content {
+.hero-content {
     min-height: inherit;
     z-index: 2;
-  }
+}
 
-  .text-shadow {
+.text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+}
 
-  .post-content .content {
+.post-content .content {
     text-align: left;
-  }
+}
 
-  /* Post Content Styles */
-  .post-content {
+/* Post Content Styles */
+.post-content {
     font-size: 1.1rem;
     line-height: 1.7;
-  }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .post-content {
-      font-size: 1.125rem;
-      line-height: 1.8;
+        font-size: 1.125rem;
+        line-height: 1.8;
     }
-  }
+}
 
-  .post-content .content h2,
-  .post-content .content h3,
-  .post-content .content h4 {
+.post-content .content h2,
+.post-content .content h3,
+.post-content .content h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-  }
+}
 
-  .post-content .content p {
+.post-content .content p {
     margin-bottom: 1.5rem;
-  }
+}
 
-  .post-content .content img {
+.post-content .content img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 1.5rem 0;
-  }
+}
 
-  /* Responsive adjustments */
-  @media (max-width: 576px) {
+/* Responsive adjustments */
+@media (max-width: 576px) {
     .post-content .display-4 {
-      font-size: 2rem !important;
+        font-size: 2rem !important;
     }
 
     .post-content .lead {
-      font-size: 1rem !important;
+        font-size: 1rem !important;
     }
 
     .hero-section {
-      min-height: 50vh;
+        min-height: 50vh;
     }
-  }
+}
