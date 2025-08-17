@@ -5,6 +5,7 @@ date: 2019-09-28 18:15:43 +0200
 categories: uni
 image: /assets/images/tn_Artist.PNG
 thumbnail: "ambition-of-an-artist_thumb.jpg"
+subtitle: "Two-month coursework project"
 description: >
   The Ambition of an Artist was part of the coursework of a University module which required to create a five-minute-long video of a game prototype. My work consisted of  creating a narrative experience featuring puzzle solving and environmental interaction. Throughout the game, the player can access to worlds inside paintings and, by exploring them, finding clues and collecting information.
 gallery:
@@ -17,74 +18,86 @@ gameplay: "https://www.youtube.com/embed/DcB6w8BZGmg"
 gdd: "https://drive.google.com/file/d/1JhC_emaToITar2NnVxOH4VNfcK7GaOax/view"
 ---
 
-A previsualisation project made in Unreal Engine about creating a MVP with a professional pipeline: it includes level design, environmental art and user interactions.
+### My work
+
+* Designed and implemented all of the level features.
+* Modelled modular level elements and other models in Maya and Blender.
+* Designed, created and implemented the level layout in Unreal Engine.
+* Made the painted shader using Unreal Post Process and a C++ custom shader.
 
 ---
 
-## Project Descrition
-
-The Ambition of an Artist was part of the coursework of a University module which required to create a five-minute-long video of a game prototype. My work consisted of  creating a narrative experience featuring puzzle solving and environmental interaction. Throughout the game, the player can access to worlds inside paintings and, by exploring them, finding clues and collecting information.
-
+<div class="row">
+<div class="col-md-6">
+### Project specifications
+* University project
+* Single player
+* Exploration vertical slice
+* Level design coursework
+* Made in Unreal Engine 4
+* Additional software used was Maya, Photoshop, Visual Studio
+</div>
+<div class="col-md-6">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DcB6w8BZGmg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
 
 ---
 
-## Specifics of the project
-
-- Made with Unreal Engine 4, Maya 2018 and Photoshop CC 2019
-- Developed in 2 months.
-- Programmed using Unreal Blueprints.
-
+<div class="row">
+<div class="col-md-6">
+The coursework had the simple objective explained above – but to test myself and my knowledge of game development, I wanted to set some additional goals listed below:
+* Develop an interactive game set in a believable environment.
+* Design a level consisting of different environments: a main entrance of the mansion, a forest, and an ancient temple.
+* Conceptualise and develop a range of interactions with the game world.
+* Achieve appeal through style, perspective, architecture, space, objects, materials, lighting, and composition.
+* Create logic with Unreal Blueprints visual scripting skills and improve my C++, here notably used for custom post-process shaders.
+* Design a satisfactory User Experience by developing a diegetic User Interface with narrative relevance.
+* Develop a game project from start to end, managing priorities and covering all the roles myself, from programmer to artist.
+</div>
+<div class="col-md-6">
 ![]({{site.baseurl}}/assets/images/AmbitionOfAnArtist3.jpg)
 
----
-
-## Objectives
-
-* Develop an interactive game set in a believable environment.
-
-* Design a level consisting of a main section, the mansion, and two small parts, a forest and an ancient temple.
-
-* Concept and develop a range of interactions with the game world.
-
-* Achieve appeal through style, perspective, architecture, space, objects, materials, lighting and composition.
-
-* Improve Unreal Blueprints scripting skills and learning C++ for custom post-process shaders.
-
-* Design a satisfactory User Experience by developing a diegetic User Interface with narrative impact.
-
-* Manage and develop a game project, managing priorities and organising the workflow.
-
----
-
-## Gameplay Overview
 
 ![]({{site.baseurl}}\assets\images\AmbitionSmallScreen.PNG)
+</div>
+</div>
 
-The player impersonates the son of a famous painter, known as Ulysses, who went missing two years earlier. The main character has found his father’s family home, which was kept secret by the artist, and starts searching for clues about the fate of his missing parent. He soon finds out that Ulysses obtained a supernatural skill through an occult ritual: his paintings are worlds that can be entered and explored. My exploring the game world(s) the player can collect clues and add new sentences to the Notepad on which the protagonist writes down his thoughts. By connecting sentences, the player can progress further in the game and obtain new interactions and clues.
 
-## Development workflow
 
-The project was a challenge I set for myself and an incentive to show my level design skills. For this purpose an accurate planning allowed me to save time during the art assets creation with a modular system for creating rooms. For summing up my approach to this work, here is an ordinate list of the tasks I have completed:
 
-* Every level has a purpose: I started by creating a definite list of objectives for the player.
 
-* Level layout: using Jacobean mansions as a source, I created a level layout which could lead the player into completing tasks. The level has a number of devices for guiding the player to the level: signposting, navigational aid, environmental narrative, audio clues and others.
 
-* Level previsualsation: I greyboxed and recreated the level in editor for final tweakings and for creating the scale of the game.
 
-*Game mechanics scripting and implementation: through Unreal Blueprints I created the final experience of the game, without the art assets. At this point the game was entirely playable.
+---
 
-* Previsualisation material: I created sketches of interiors while considering a modular art assets design, plus collecting sources and drawing inspiration from them.
+<div class="row">
+<div class="col-md-6">
+### Gameplay Overview
 
-* 3D assets creation: using Maya, I created the majority of the assets in the game.
-
-* Editor implementation and final tests: the last week before the deadline I have implemented the art and tested the product.
-
+The player impersonates the son of a famous painter, known as Ulysses, who went missing two years earlier. The main character soon finds out that his father’s paintings are worlds that can be accessed and explored. Throughout the level, the player can collect clues and add them to their Notepad in the form of sentences. By connecting different sentences, the character can form “thoughts” that allow further progression in the game, unlocking new interactions and clues.
+</div>
+<div class="col-md-6">
 ![]({{site.baseurl}}/assets/images/AmbitionOfAnArtist2.jpg)
 
+</div>
+</div>
 
 
-## Takeaway from this coursework
 
-During this coursework I created a polished interactive experience by myself. I have learnt a lot about art production and the game development pipeline and learnt basic C++ for shaders in Unreal Engine. My level design skills improved immensely as I had to take into the account some issues that are usually faced by the artists during development such as modularity and rendering.
+---
+
+### Development workflow
+
+The project was a challenge I set for myself and an incentive to show my level design skills and to apply most of what I learned during the first two years of study. Accurate planning and advanced techniques allowed me to save time during the whole project. For instance, for the art assets of the level, I created a modular set of pieces to be able to reconfigure the design of the level layout, if needed.
+
+ To sum up my work on this project, here is a sorted list of the tasks I completed from start to end:
+* I started by creating a definite list of objectives for the player: what were the important interactions? How should the gameplay provide the feeling of progression?
+* Using Jacobean mansions as a visual reference, I created a level layout which could lead the player into completing tasks. The level has several level design devices for guiding the player: signposting, navigational aids, audio cues and others.
+* I greyboxed the whole level to create the logic and the progression of the main quest.
+* Game mechanics scripting and implementation: through Unreal Blueprints I created the final experience of the game, without the art assets. At this point, the game was entirely playable.
+* I then created sketches of interiors with the objective of creating a set of modular art assets.
+* 3D and 2D assets creation: using Maya, Blender, and Photoshop, I created the assets in the game, both in the 3D space and as the interactable UI.
+* Editor implementation and final tests: the last week before the deadline I implemented the art and tested the whole vertical slice.
+
+During this coursework, I created a polished interactive experience by myself. As I had been practicing art assets production since middle school, that part of the coursework was not difficult for me, but it was still useful to apply professional techniques and work on a tight deadline (2 months). Also, I had the chance to use my C++ knowledge and for the first time I created a custom shader in Unreal Engine. In the end, this assignment was a useful test for what I learnt during half of my academic path. The same test was then repeated at the end of my degree, with my dissertation project.

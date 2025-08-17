@@ -31,9 +31,9 @@ layout: default
             </h1>
 
             <!-- Optional excerpt/description -->
-            {% if page.excerpt %}
+            {% if page.subtitle %}
             <p class="lead fs-5 fs-md-4 mb-4 text-light">
-              {{ page.excerpt | strip_html | truncatewords: 30 }}
+              {{ page.subtitle}}
             </p>
             {% endif %}
           </div>
